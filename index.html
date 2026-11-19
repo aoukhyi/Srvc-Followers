@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Srvc Foullowrs — Your Digital Growth Partner</title>
+<meta name="description" content="Srvc Foullowrs — خدماتك الرقمية لنمو حساباتك. Premium social media growth services with instant WhatsApp ordering. Zero-cost architecture."/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','Cairo','sans-serif'],display:['Space Grotesk','Cairo','sans-serif'],ar:['Cairo','sans-serif']},colors:{ink:'#070812',panel:'#0d0d1d',gold:'#f5c518',vio:'#7c3aed'}}}}
+</script>
+<style>
+*{-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{background:#070812;color:#fff;font-family:Inter,Cairo,sans-serif;overflow-x:hidden}
+[dir="rtl"] body{font-family:Cairo,Inter,sans-serif}
+::-webkit-scrollbar{width:9px;height:9px}::-webkit-scrollbar-track{background:#0d0d1d}::-webkit-scrollbar-thumb{background:linear-gradient(#7c3aed,#06b6d4);border-radius:99px}
+.grad-text{background:linear-gradient(92deg,#f5c518 0%,#fb923c 35%,#e879f9 70%,#22d3ee 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.grad-gold{background:linear-gradient(92deg,#fde68a,#f5c518,#d97706);-webkit-background-clip:text;background-clip:text;color:transparent}
+.glass{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);backdrop-filter:blur(16px)}
+.glass2{background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(18px)}
+.card-hover{transition:.35s cubic-bezier(.2,.9,.3,1.4)}
+.card-hover:hover{transform:translateY(-7px);border-color:rgba(245,197,24,.45);box-shadow:0 24px 50px -20px rgba(124,58,237,.55)}
+.btn-gold{background:linear-gradient(92deg,#f5c518,#f97316);color:#111;box-shadow:0 10px 28px -8px rgba(245,197,24,.55)}
+.btn-gold:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn-wa{background:linear-gradient(92deg,#25D366,#128C7E);color:#fff;box-shadow:0 10px 28px -8px rgba(37,211,102,.5)}
+.btn-wa:hover{filter:brightness(1.08)}
+.btn-vio{background:linear-gradient(92deg,#7c3aed,#2563eb);color:#fff}
+.chip.active{background:linear-gradient(92deg,#f5c518,#f97316);color:#111;border-color:transparent;font-weight:800}
+input,select,textarea{outline:none}
+input:focus,select:focus,textarea:focus{border-color:#f5c518!important;box-shadow:0 0 0 3px rgba(245,197,24,.15)}
+.field{background:#12122a;border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:11px 14px;width:100%;color:#fff;font-size:14px}
+.field::placeholder{color:#8b8ba7}
+select.field option{background:#12122a}
+.orb{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;pointer-events:none}
+.grid-bg{background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:52px 52px}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-13px)}}
+.floaty{animation:floaty 5s ease-in-out infinite}
+.floaty2{animation:floaty 7s ease-in-out infinite;animation-delay:1.2s}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marquee{animation:marquee 26s linear infinite}
+.reveal{opacity:0;transform:translateY(26px);transition:.7s ease}
+.reveal.in{opacity:1;transform:none}
+@keyframes pulse-dot{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 9px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.live-dot{animation:pulse-dot 2s infinite}
+@keyframes toastIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.toast{animation:toastIn .3s ease}
+.qty-btn{font-size:11px;padding:5px 9px;border-radius:99px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.05)}
+.qty-btn:hover{border-color:#f5c518;color:#f5c518}
+details summary{cursor:pointer}
+.tab-btn.active{background:linear-gradient(92deg,#f5c518,#f97316);color:#111;font-weight:800}
+.line-clamp-2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+</style>
+</head>
+<body class="antialiased">
+
+<!-- TOP ANNOUNCEMENT -->
+<div class="bg-gradient-to-r from-violet-700 via-fuchsia-600 to-amber-500 text-white text-center text-[12px] sm:text-[13px] font-bold py-2 px-3 tracking-wide">
+  <span id="announceText">ZERO-COST ARCHITECTURE — $0 Hosting • $0 Database • $0 Subscriptions • Cloudflare Pages Ready</span>
+  <span class="hidden sm:inline"> • </span><span class="hidden sm:inline text-amber-200">Code: WELCOME20 = 20% OFF</span>
+</div>
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 glass border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 h-[68px] flex items-center justify-between gap-3">
+    <a href="#home" class="flex items-center gap-3 shrink-0">
+      <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-amber-400 via-orange-500 to-violet-600 flex items-center justify-center font-display font-bold text-[19px] shadow-lg shadow-orange-500/30">S</div>
+      <div class="leading-tight">
+        <div class="font-display font-bold text-[17px] sm:text-lg tracking-tight"><span class="brand-name">Srvc Foullowrs</span></div>
+        <div class="text-[10px] text-amber-300 font-bold tracking-widest uppercase brand-tagline-small">Digital Growth Partner</div>
+      </div>
+    </a>
+    <nav class="hidden lg:flex items-center gap-1 text-[13.5px] font-semibold text-white/80">
+      <a href="#home" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-white" data-i18n="navHome">Home</a>
+      <a href="#catalog" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-white" data-i18n="navCatalog">Services</a>
+      <a href="#catalog" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-white" data-i18n="navCalc">Calculator</a>
+      <a href="#coupons" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-white" data-i18n="navCoupons">Coupons</a>
+      <a href="#order" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-white" data-i18n="navOrder">My Order</a>
+      <a href="#admin" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-white" data-i18n="navAdmin">Admin</a>
+      <a href="#readme" class="px-3 py-2 rounded-full hover:bg-white/10 hover:text-white" data-i18n="navReadme">Free Deployment</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <div class="hidden md:flex glass rounded-full p-1 text-[12px] font-bold">
+        <button onclick="setLang('ar')" class="lang-btn px-3 py-1.5 rounded-full" data-lang="ar">عربي</button>
+        <button onclick="setLang('fr')" class="lang-btn px-3 py-1.5 rounded-full" data-lang="fr">FR</button>
+        <button onclick="setLang('en')" class="lang-btn px-3 py-1.5 rounded-full" data-lang="en">EN</button>
+      </div>
+      <button onclick="scrollToId('order')" class="relative w-10 h-10 rounded-full glass flex items-center justify-center hover:border-amber-400/60" title="Cart">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span id="cartBadge" class="absolute -top-1 -end-1 bg-amber-400 text-black text-[10px] font-extrabold w-5 h-5 rounded-full flex items-center justify-center">0</span>
+      </button>
+      <a id="headerWa" href="#" target="_blank" rel="noopener" class="btn-wa hidden sm:flex items-center gap-2 px-4 py-2.5 rounded-full text-[13px] font-extrabold">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.1 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.85 9.85 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 9.88 9.89c0 5.45-4.44 9.88-9.89 9.88M12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.16 1.6 5.97L.05 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9C23.95 5.34 18.61 0 12.05 0"/></svg>
+        <span data-i18n="whatsapp">WhatsApp</span>
+      </a>
+      <button id="menuBtn" class="lg:hidden w-10 h-10 rounded-full glass flex items-center justify-center text-xl">☰</button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden lg:hidden border-t border-white/10 px-4 py-3 space-y-1 text-sm font-semibold">
+    <div class="flex gap-1 mb-2">
+      <button onclick="setLang('ar')" class="lang-btn flex-1 glass py-2 rounded-xl" data-lang="ar">عربي</button>
+      <button onclick="setLang('fr')" class="lang-btn flex-1 glass py-2 rounded-xl" data-lang="fr">FR</button>
+      <button onclick="setLang('en')" class="lang-btn flex-1 glass py-2 rounded-xl" data-lang="en">EN</button>
+    </div>
+    <a href="#home" class="block py-2" data-i18n="navHome">Home</a><a href="#catalog" class="block py-2" data-i18n="navCatalog">Services</a><a href="#coupons" class="block py-2" data-i18n="navCoupons">Coupons</a><a href="#order" class="block py-2" data-i18n="navOrder">My Order</a><a href="#admin" class="block py-2" data-i18n="navAdmin">Admin</a><a href="#readme" class="block py-2" data-i18n="navReadme">Free Deployment</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="relative grid-bg overflow-hidden">
+  <div class="orb w-[420px] h-[420px] bg-violet-600 -top-32 -start-32"></div>
+  <div class="orb w-[380px] h-[380px] bg-cyan-500 top-40 -end-24"></div>
+  <div class="orb w-[300px] h-[300px] bg-amber-500 bottom-0 start-1/3 opacity-30"></div>
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 pt-12 pb-16 lg:pt-20 lg:pb-24 grid lg:grid-cols-2 gap-12 items-center relative">
+    <div class="reveal in">
+      <div class="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-[12px] font-bold text-amber-300">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span>
+        <span data-i18n="heroBadge">100% Free to Host • No Subscriptions • Cloudflare Pages Ready</span>
+      </div>
+      <h1 class="font-display font-bold text-[42px] leading-[1.02] sm:text-6xl lg:text-[68px] mt-6 tracking-tight">
+        <span class="brand-name">Srvc Foullowrs</span><br/>
+        <span id="heroTagline" class="grad-text">Your Digital Growth Partner</span>
+      </h1>
+      <p id="heroAr" class="font-ar text-2xl sm:text-3xl font-extrabold mt-4 text-white/95" dir="rtl">خدماتك الرقمية لنمو حساباتك</p>
+      <p class="text-white/60 text-[15.5px] leading-relaxed mt-4 max-w-xl" data-i18n="heroDesc">Premium followers, likes, views & subscribers for every platform. Calculate your price instantly, apply a coupon, and send your order directly on WhatsApp — no accounts, no subscriptions, no hidden fees.</p>
+      <div class="flex flex-wrap gap-3 mt-8">
+        <button onclick="scrollToId('catalog')" class="btn-gold px-7 py-3.5 rounded-full font-extrabold text-sm flex items-center gap-2"><span data-i18n="browse">Browse Services</span> <span>→</span></button>
+        <a id="heroWa" href="#" target="_blank" rel="noopener" class="btn-wa px-7 py-3.5 rounded-full font-extrabold text-sm flex items-center gap-2">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.1 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.85 9.85 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 9.88 9.89c0 5.45-4.44 9.88-9.89 9.88M12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.16 1.6 5.97L.05 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9C23.95 5.34 18.61 0 12.05 0"/></svg>
+          <span data-i18n="orderNow">Order on WhatsApp</span>
+        </a>
+      </div>
+      <div class="grid grid-cols-4 gap-3 mt-10 max-w-lg">
+        <div><div class="font-display text-2xl font-bold grad-gold"><span class="counter" data-target="12500">0</span>+</div><div class="text-[11px] text-white/50 font-semibold" data-i18n="statOrders">Orders Done</div></div>
+        <div><div class="font-display text-2xl font-bold grad-gold">4.9<span class="text-sm">★</span></div><div class="text-[11px] text-white/50 font-semibold" data-i18n="statRating">Avg Rating</div></div>
+        <div><div class="font-display text-2xl font-bold grad-gold">9</div><div class="text-[11px] text-white/50 font-semibold" data-i18n="statPlatforms">Platforms</div></div>
+        <div><div class="font-display text-2xl font-bold text-emerald-400">$0</div><div class="text-[11px] text-white/50 font-semibold" data-i18n="statCost">Monthly Cost</div></div>
+      </div>
+    </div>
+
+    <!-- HERO CALCULATOR CARD -->
+    <div class="relative reveal in">
+      <div class="glass2 rounded-[28px] p-6 sm:p-7 shadow-2xl shadow-violet-900/40">
+        <div class="flex items-center justify-between">
+          <div class="font-display font-bold text-lg" data-i18n="quickCalc">Instant Price Calculator</div>
+          <span class="text-[11px] font-extrabold bg-emerald-400/15 text-emerald-300 border border-emerald-400/30 px-3 py-1 rounded-full" data-i18n="live">LIVE</span>
+        </div>
+        <div class="mt-5 rounded-2xl bg-black/30 border border-white/10 p-4 flex items-center gap-4">
+          <div id="heroPlatIcon" class="w-14 h-14 rounded-2xl flex items-center justify-center font-display font-bold text-lg shrink-0" style="background:linear-gradient(135deg,#ec4899,#8b5cf6)">IG</div>
+          <div class="min-w-0">
+            <div id="heroSvcName" class="font-bold truncate">Instagram Followers</div>
+            <div class="text-[12px] text-white/50"><span id="heroPer1000">35</span> <span class="cur">MAD</span> / 1000 • <span data-i18n="delivery">Delivery</span> 1-6h</div>
+          </div>
+          <select id="heroSvcSelect" onchange="heroCalc()" class="field !w-auto !py-2 text-xs ms-auto shrink-0"></select>
+        </div>
+        <div class="mt-6">
+          <div class="flex justify-between text-[13px] font-semibold text-white/70"><span data-i18n="quantity">Quantity</span><span class="text-white font-bold"><span id="heroQtyLabel">1,000</span></span></div>
+          <input id="heroQty" type="range" min="100" max="20000" step="100" value="1000" oninput="heroCalc()" class="w-full accent-amber-400 mt-3"/>
+          <div class="flex gap-2 mt-3 flex-wrap">
+            <button class="qty-btn" onclick="heroSetQty(100)">100</button><button class="qty-btn" onclick="heroSetQty(500)">500</button><button class="qty-btn" onclick="heroSetQty(1000)">1K</button><button class="qty-btn" onclick="heroSetQty(5000)">5K</button><button class="qty-btn" onclick="heroSetQty(10000)">10K</button>
+          </div>
+        </div>
+        <div class="mt-6 flex items-end justify-between rounded-2xl bg-gradient-to-r from-amber-400/15 to-orange-500/10 border border-amber-400/25 p-4">
+          <div><div class="text-[11px] text-white/50 font-bold uppercase tracking-wider" data-i18n="totalPrice">Total Price</div><div class="text-[12px] text-white/50" id="heroUnitNote">35 × 1</div></div>
+          <div class="text-end"><span id="heroPrice" class="font-display text-3xl font-bold grad-gold">35.00</span> <span class="cur font-bold text-amber-300">MAD</span></div>
+        </div>
+        <div class="grid grid-cols-2 gap-3 mt-4">
+          <button onclick="heroAddToCart()" class="btn-gold py-3 rounded-2xl font-extrabold text-sm" data-i18n="addToOrder">Add to Order</button>
+          <button onclick="heroBuyNow()" class="btn-wa py-3 rounded-2xl font-extrabold text-sm" data-i18n="buyNow">Buy Now →</button>
+        </div>
+        <div class="flex items-center gap-2 mt-4 text-[12px] text-white/50"><span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span><span data-i18n="secureNote">Prices update automatically • No payment needed now — confirm on WhatsApp</span></div>
+      </div>
+      <div class="absolute -top-5 -end-2 sm:-end-5 glass2 rounded-2xl px-4 py-3 floaty shadow-xl"><div class="text-[11px] text-white/50 font-bold" data-i18n="todayOrders">Today's Orders</div><div class="font-display font-bold text-lg text-emerald-400">+<span class="counter" data-target="148">0</span></div></div>
+      <div class="absolute -bottom-6 -start-2 sm:-start-6 glass2 rounded-2xl px-4 py-3 floaty2 shadow-xl flex items-center gap-3"><div class="w-9 h-9 rounded-xl bg-emerald-400/20 text-emerald-300 flex items-center justify-center font-bold">✓</div><div><div class="text-[12px] font-bold" data-i18n="refundNote">Fast & Safe Delivery</div><div class="text-[11px] text-white/50">Start in 5 min</div></div></div>
+    </div>
+  </div>
+  <!-- MARQUEE -->
+  <div class="border-y border-white/10 bg-white/[0.02] py-4 overflow-hidden" dir="ltr">
+    <div class="marquee flex gap-10 whitespace-nowrap font-display font-bold text-white/35 text-lg w-max" id="marqueeTrack"></div>
+  </div>
+</section>
+
+<!-- ZERO COST STRIP -->
+<section class="max-w-7xl mx-auto px-4 lg:px-6 py-14 reveal">
+  <div class="text-center"><span class="text-[12px] font-extrabold tracking-[0.2em] text-amber-400 uppercase" data-i18n="zeroBadge">Strict Zero-Cost Architecture</span>
+  <h2 class="font-display text-3xl sm:text-4xl font-bold mt-2"><span data-i18n="zeroTitle1">Run your entire business for</span> <span class="grad-gold">$0 / month</span></h2>
+  <p class="text-white/50 mt-3 max-w-2xl mx-auto text-sm" data-i18n="zeroDesc">Every feature that would normally require a paid subscription has been replaced with a free alternative. No paid APIs. No premium plugins. No paid database.</p></div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-9" id="zeroCards"></div>
+</section>
+
+<!-- CATALOG -->
+<section id="catalog" class="max-w-7xl mx-auto px-4 lg:px-6 py-10 scroll-mt-24 reveal">
+  <div class="flex flex-wrap items-end justify-between gap-4">
+    <div><span class="text-[12px] font-extrabold tracking-widest text-amber-400 uppercase" data-i18n="catBadge">Services Catalog</span>
+    <h2 class="font-display text-3xl sm:text-[42px] font-bold mt-1"><span data-i18n="catTitle1">Grow on every</span> <span class="grad-text" data-i18n="catTitle2">platform</span></h2></div>
+    <p class="text-white/50 text-sm max-w-sm" data-i18n="catDesc">Search, filter by platform, choose a quantity and watch the price calculate automatically.</p>
+  </div>
+
+  <div class="glass rounded-[22px] p-4 mt-8 flex flex-col lg:flex-row gap-3 lg:items-center">
+    <div class="relative flex-1">
+      <svg class="absolute start-4 top-1/2 -translate-y-1/2 text-white/40" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="searchInput" oninput="renderServices()" class="field !ps-11 !py-3.5 !rounded-full" data-i18n-ph="searchPh" placeholder="Search services... e.g. TikTok followers"/>
+    </div>
+    <select id="sortSelect" onchange="renderServices()" class="field lg:!w-[210px] !rounded-full !py-3.5">
+      <option value="popular" data-i18n="sortPopular">Most Popular</option>
+      <option value="low" data-i18n="sortLow">Price: Low → High</option>
+      <option value="high" data-i18n="sortHigh">Price: High → Low</option>
+      <option value="name" data-i18n="sortName">Name A-Z</option>
+    </select>
+    <div class="text-[13px] text-white/50 font-semibold whitespace-nowrap"><span id="svcCount">0</span> <span data-i18n="servicesWord">services</span></div>
+  </div>
+  <div id="platformChips" class="flex gap-2 mt-5 flex-wrap"></div>
+  <div id="servicesGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-6"></div>
+  <div id="noSvc" class="hidden text-center py-16 text-white/40"><div class="text-5xl mb-3">◎</div><div class="font-bold" data-i18n="noSvc">No services match your search.</div></div>
+</section>
+
+<!-- COUPONS -->
+<section id="coupons" class="max-w-7xl mx-auto px-4 lg:px-6 py-14 scroll-mt-24 reveal">
+  <div class="text-center"><span class="text-[12px] font-extrabold tracking-widest text-amber-400 uppercase" data-i18n="cpBadge">Discount Coupons</span>
+  <h2 class="font-display text-3xl sm:text-4xl font-bold mt-2" data-i18n="cpTitle">Save more with coupons</h2>
+  <p class="text-white/50 text-sm mt-2" data-i18n="cpDesc">Copy a code and apply it in your order below. Coupons are managed free from the Admin panel.</p></div>
+  <div id="couponsGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-9"></div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="max-w-7xl mx-auto px-4 lg:px-6 py-8 reveal">
+  <h2 class="font-display text-3xl font-bold text-center" data-i18n="howTitle">How it works</h2>
+  <div class="grid md:grid-cols-3 gap-4 mt-9">
+    <div class="glass2 rounded-3xl p-6 card-hover"><div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 text-black font-display font-bold flex items-center justify-center text-lg">1</div><h3 class="font-bold text-lg mt-4" data-i18n="step1T">Choose services & quantity</h3><p class="text-white/50 text-sm mt-2 leading-relaxed" data-i18n="step1D">Pick any platform, set the quantity, and the price updates automatically — no negotiation needed.</p></div>
+    <div class="glass2 rounded-3xl p-6 card-hover"><div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-500 to-fuchsia-500 font-display font-bold flex items-center justify-center text-lg">2</div><h3 class="font-bold text-lg mt-4" data-i18n="step2T">Apply a coupon</h3><p class="text-white/50 text-sm mt-2 leading-relaxed" data-i18n="step2D">Enter a discount code like WELCOME20 and the total recalculates instantly.</p></div>
+    <div class="glass2 rounded-3xl p-6 card-hover"><div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-500 text-black font-display font-bold flex items-center justify-center text-lg">3</div><h3 class="font-bold text-lg mt-4" data-i18n="step3T">Confirm on WhatsApp</h3><p class="text-white/50 text-sm mt-2 leading-relaxed" data-i18n="step3D">One click generates a ready-made WhatsApp message with your full order sent to +212 681-560808.</p></div>
+  </div>
+</section>
+
+<!-- ORDER / CHECKOUT -->
+<section id="order" class="max-w-7xl mx-auto px-4 lg:px-6 py-14 scroll-mt-24 reveal">
+  <div class="text-center"><span class="text-[12px] font-extrabold tracking-widest text-amber-400 uppercase" data-i18n="ordBadge">Smart Checkout</span>
+  <h2 class="font-display text-3xl sm:text-4xl font-bold mt-2" data-i18n="ordTitle">Your order & WhatsApp checkout</h2></div>
+  <div class="grid lg:grid-cols-5 gap-5 mt-10 items-start">
+    <!-- Cart -->
+    <div class="lg:col-span-3 glass2 rounded-[26px] p-5 sm:p-6">
+      <div class="flex items-center justify-between"><h3 class="font-display font-bold text-lg" data-i18n="yourOrder">Your Order</h3><button onclick="clearCart()" class="text-[12px] text-red-300 font-bold hover:underline" data-i18n="clear">Clear all</button></div>
+      <div id="cartItems" class="mt-4 space-y-3"></div>
+      <div id="emptyCart" class="text-center py-12 text-white/40"><div class="text-4xl mb-2">◇</div><div class="font-semibold text-sm" data-i18n="emptyCart">Your cart is empty. Add a service to get started.</div>
+      <button onclick="scrollToId('catalog')" class="btn-gold px-5 py-2.5 rounded-full font-bold text-sm mt-4" data-i18n="browse">Browse Services</button></div>
+
+      <div class="mt-6 pt-5 border-t border-white/10">
+        <label class="text-[13px] font-bold text-white/70" data-i18n="couponLabel">Discount coupon</label>
+        <div class="flex gap-2 mt-2">
+          <input id="couponInput" class="field uppercase" placeholder="WELCOME20" onkeydown="if(event.key==='Enter')applyCoupon()"/>
+          <button onclick="applyCoupon()" class="btn-vio px-5 rounded-xl font-extrabold text-sm shrink-0" data-i18n="apply">Apply</button>
+        </div>
+        <div id="couponMsg" class="text-[12px] mt-2 font-semibold"></div>
+      </div>
+
+      <div class="space-y-2 mt-5 text-sm">
+        <div class="flex justify-between text-white/60"><span data-i18n="subtotal">Subtotal</span><span><span id="subTotalVal">0.00</span> <span class="cur">MAD</span></span></div>
+        <div class="flex justify-between text-emerald-300" id="discountRow" style="display:none"><span><span data-i18n="discount">Discount</span> (<span id="appliedCode"></span>)</span><span>-<span id="discountVal">0.00</span> <span class="cur">MAD</span></span></div>
+        <div class="flex justify-between items-center pt-3 border-t border-white/10"><span class="font-bold" data-i18n="total">Total</span><span class="font-display text-3xl font-bold grad-gold"><span id="grandTotal">0.00</span> <span class="cur text-lg">MAD</span></span></div>
+      </div>
+    </div>
+
+    <!-- Checkout form -->
+    <div class="lg:col-span-2 glass2 rounded-[26px] p-5 sm:p-6">
+      <h3 class="font-display font-bold text-lg" data-i18n="checkoutTitle">Checkout details</h3>
+      <div class="space-y-3 mt-4">
+        <input id="custName" class="field" data-i18n-ph="namePh" placeholder="Your name *"/>
+        <input id="custPhone" class="field" data-i18n-ph="phonePh" placeholder="Your phone / WhatsApp"/>
+        <input id="custLink" class="field" data-i18n-ph="linkPh" placeholder="Profile / post link (optional)"/>
+        <textarea id="custNotes" rows="2" class="field" data-i18n-ph="notesPh" placeholder="Notes (optional)"></textarea>
+      </div>
+      <label class="text-[12px] font-bold text-white/60 mt-5 block" data-i18n="waPreview">Generated WhatsApp message</label>
+      <textarea id="waPreview" rows="7" readonly class="field mt-2 !text-[12px] leading-relaxed !bg-black/40"></textarea>
+      <button onclick="sendWhatsApp()" class="btn-wa w-full py-4 rounded-2xl font-extrabold text-[15px] mt-4 flex items-center justify-center gap-2">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.1 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.85 9.85 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 9.88 9.89c0 5.45-4.44 9.88-9.89 9.88M12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.16 1.6 5.97L.05 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9C23.95 5.34 18.61 0 12.05 0"/></svg>
+        <span data-i18n="sendWa">Send Order via WhatsApp</span>
+      </button>
+      <button onclick="copyPreview()" class="w-full glass py-3 rounded-2xl font-bold text-sm mt-2 hover:border-amber-400/50" data-i18n="copyMsg">Copy message</button>
+      <p class="text-[11px] text-white/40 text-center mt-3" data-i18n="payNote">No online payment required — you confirm & pay directly in the WhatsApp chat.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ADMIN -->
+<section id="admin" class="max-w-7xl mx-auto px-4 lg:px-6 py-14 scroll-mt-24 reveal">
+  <div class="text-center"><span class="text-[12px] font-extrabold tracking-widest text-amber-400 uppercase" data-i18n="admBadge">Free Admin Panel</span>
+  <h2 class="font-display text-3xl sm:text-4xl font-bold mt-2" data-i18n="admTitle">Manage services, prices & branding</h2>
+  <p class="text-white/50 text-sm mt-2 max-w-xl mx-auto" data-i18n="admDesc">Everything is saved in your browser (localStorage) — a 100% free database. Export a backup anytime.</p></div>
+
+  <!-- Login -->
+  <div id="adminLogin" class="glass2 rounded-[26px] p-6 sm:p-8 max-w-md mx-auto mt-9">
+    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-600 to-blue-500 flex items-center justify-center mx-auto text-xl font-bold">🔐</div>
+    <h3 class="font-display font-bold text-xl text-center mt-4" data-i18n="admLoginT">Admin Login</h3>
+    <p class="text-white/45 text-[13px] text-center mt-1" data-i18n="admLoginD">Demo password: <b class="text-amber-300">admin123</b> — change it in the code before going live.</p>
+    <input id="adminPass" type="password" class="field mt-5 text-center" placeholder="••••••••" onkeydown="if(event.key==='Enter')adminLogin()"/>
+    <div id="adminLoginErr" class="text-red-300 text-[12px] text-center mt-2 font-semibold"></div>
+    <button onclick="adminLogin()" class="btn-gold w-full py-3.5 rounded-2xl font-extrabold mt-3" data-i18n="loginBtn">Login to Admin Panel</button>
+  </div>
+
+  <!-- Panel -->
+  <div id="adminPanel" class="hidden mt-9">
+    <div class="flex flex-wrap gap-2 justify-center">
+      <button class="tab-btn active glass px-5 py-2.5 rounded-full text-sm font-bold" onclick="adminTab('services',this)" data-i18n="tabServices">Services & Prices</button>
+      <button class="tab-btn glass px-5 py-2.5 rounded-full text-sm font-bold" onclick="adminTab('branding',this)" data-i18n="tabBranding">Branding & Content</button>
+      <button class="tab-btn glass px-5 py-2.5 rounded-full text-sm font-bold" onclick="adminTab('coupons',this)" data-i18n="tabCoupons">Coupons</button>
+      <button class="tab-btn glass px-5 py-2.5 rounded-full text-sm font-bold" onclick="adminTab('data',this)" data-i18n="tabData">Backup & Export</button>
+      <button onclick="adminLogout()" class="glass px-5 py-2.5 rounded-full text-sm font-bold text-red-300" data-i18n="logout">Logout</button>
+    </div>
+
+    <!-- SERVICES TAB -->
+    <div id="tab-services" class="admin-tab glass2 rounded-[26px] p-5 sm:p-7 mt-5">
+      <h3 class="font-display font-bold text-lg" id="svcFormTitle">Add / Edit Service</h3>
+      <input type="hidden" id="f_id"/>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mt-4">
+        <div><label class="text-[12px] text-white/50 font-bold">Platform</label><select id="f_platform" class="field mt-1"></select></div>
+        <div><label class="text-[12px] text-white/50 font-bold">Price per 1000 (MAD)</label><input id="f_price" type="number" min="0" step="0.5" class="field mt-1"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold">Min quantity</label><input id="f_min" type="number" class="field mt-1"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold">Max quantity</label><input id="f_max" type="number" class="field mt-1"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold">Name (EN)</label><input id="f_name_en" class="field mt-1"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold">Name (FR)</label><input id="f_name_fr" class="field mt-1"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold">Name (AR)</label><input id="f_name_ar" class="field mt-1" dir="rtl"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold">Delivery time</label><input id="f_time" class="field mt-1" placeholder="1-6h"/></div>
+        <div class="sm:col-span-2"><label class="text-[12px] text-white/50 font-bold">Description (EN)</label><input id="f_desc_en" class="field mt-1"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold">Description (FR)</label><input id="f_desc_fr" class="field mt-1"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold">Description (AR)</label><input id="f_desc_ar" class="field mt-1" dir="rtl"/></div>
+      </div>
+      <div class="flex flex-wrap gap-2 mt-5">
+        <button onclick="saveService()" class="btn-gold px-6 py-3 rounded-2xl font-extrabold text-sm" data-i18n="saveSvc">Save Service</button>
+        <button onclick="resetSvcForm()" class="glass px-6 py-3 rounded-2xl font-bold text-sm" data-i18n="resetForm">Reset form</button>
+      </div>
+      <div id="adminSvcList" class="mt-7 space-y-2"></div>
+    </div>
+
+    <!-- BRANDING TAB -->
+    <div id="tab-branding" class="admin-tab hidden glass2 rounded-[26px] p-5 sm:p-7 mt-5">
+      <h3 class="font-display font-bold text-lg" data-i18n="brandTitle">Edit branding & content</h3>
+      <div class="grid sm:grid-cols-2 gap-3 mt-4">
+        <div><label class="text-[12px] text-white/50 font-bold" data-i18n="bName">Business name</label><input id="b_name" class="field mt-1"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold">WhatsApp number (intl.)</label><input id="b_whatsapp" class="field mt-1" placeholder="212681560808"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold">Tagline (EN)</label><input id="b_tag_en" class="field mt-1"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold">Tagline (FR)</label><input id="b_tag_fr" class="field mt-1"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold">Tagline (AR)</label><input id="b_tag_ar" class="field mt-1" dir="rtl"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold" data-i18n="bAnnounce">Announcement bar</label><input id="b_announce" class="field mt-1"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold" data-i18n="bCurrency">Currency label</label><input id="b_currency" class="field mt-1"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold" data-i18n="bHero">Hero description (EN)</label><input id="b_hero" class="field mt-1"/></div>
+      </div>
+      <button onclick="saveBranding()" class="btn-gold px-6 py-3 rounded-2xl font-extrabold text-sm mt-5" data-i18n="saveBrand">Save branding & apply live</button>
+    </div>
+
+    <!-- COUPONS TAB -->
+    <div id="tab-coupons" class="admin-tab hidden glass2 rounded-[26px] p-5 sm:p-7 mt-5">
+      <h3 class="font-display font-bold text-lg" data-i18n="cpAdminT">Add coupon</h3>
+      <div class="grid sm:grid-cols-4 gap-3 mt-4">
+        <div><label class="text-[12px] text-white/50 font-bold">Code</label><input id="c_code" class="field mt-1 uppercase" placeholder="GROWTH10"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold">Discount %</label><input id="c_percent" type="number" min="1" max="90" class="field mt-1" placeholder="10"/></div>
+        <div><label class="text-[12px] text-white/50 font-bold">Min subtotal (MAD)</label><input id="c_min" type="number" class="field mt-1" placeholder="0"/></div>
+        <div class="flex items-end"><button onclick="saveCoupon()" class="btn-gold w-full py-3 rounded-xl font-extrabold text-sm" data-i18n="addCoupon">Add Coupon</button></div>
+      </div>
+      <div id="adminCpList" class="mt-6 space-y-2"></div>
+    </div>
+
+    <!-- DATA TAB -->
+    <div id="tab-data" class="admin-tab hidden glass2 rounded-[26px] p-5 sm:p-7 mt-5">
+      <h3 class="font-display font-bold text-lg" data-i18n="dataTitle">Backup, export & reset</h3>
+      <p class="text-white/50 text-sm mt-2" data-i18n="dataDesc">Your data lives in localStorage (free). Export regularly to keep a backup, then import it on any device.</p>
+      <div class="flex flex-wrap gap-2 mt-5">
+        <button onclick="exportJSON()" class="btn-gold px-5 py-3 rounded-2xl font-extrabold text-sm" data-i18n="expJson">Export data (JSON)</button>
+        <button onclick="downloadProject()" class="btn-vio px-5 py-3 rounded-2xl font-extrabold text-sm" data-i18n="expProject">Download full project (.html)</button>
+        <button onclick="downloadReadme()" class="glass px-5 py-3 rounded-2xl font-bold text-sm" data-i18n="expReadme">Download README.txt</button>
+        <label class="glass px-5 py-3 rounded-2xl font-bold text-sm cursor-pointer hover:border-amber-400/50"><span data-i18n="impJson">Import data (JSON)</span><input type="file" accept=".json" class="hidden" onchange="importJSON(event)"/></label>
+        <button onclick="resetAll()" class="px-5 py-3 rounded-2xl font-bold text-sm bg-red-500/15 border border-red-400/30 text-red-300" data-i18n="resetAll">Reset to defaults</button>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-3 mt-7 text-center">
+        <div class="glass rounded-2xl p-4"><div class="font-display text-2xl font-bold grad-gold" id="statSvc">0</div><div class="text-[12px] text-white/50" data-i18n="tabServices">Services & Prices</div></div>
+        <div class="glass rounded-2xl p-4"><div class="font-display text-2xl font-bold grad-gold" id="statCp">0</div><div class="text-[12px] text-white/50" data-i18n="tabCoupons">Coupons</div></div>
+        <div class="glass rounded-2xl p-4"><div class="font-display text-2xl font-bold text-emerald-400">$0</div><div class="text-[12px] text-white/50" data-i18n="storageCost">Storage cost</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- README / DEPLOYMENT -->
+<section id="readme" class="max-w-7xl mx-auto px-4 lg:px-6 py-14 scroll-mt-24 reveal">
+  <div class="glass2 rounded-[28px] p-6 sm:p-10 relative overflow-hidden">
+    <div class="orb w-[300px] h-[300px] bg-violet-700 -top-24 -end-24"></div>
+    <div class="relative">
+      <span class="text-[12px] font-extrabold tracking-widest text-amber-400 uppercase" data-i18n="rdBadge">README — Free Deployment</span>
+      <h2 class="font-display text-3xl sm:text-4xl font-bold mt-2" data-i18n="rdTitle">Deploy free on Cloudflare Pages in 5 minutes</h2>
+      <div class="grid lg:grid-cols-2 gap-8 mt-8 text-sm">
+        <div>
+          <h3 class="font-bold text-amber-300 mb-3" data-i18n="rdStep1">Option A — Direct Upload (no GitHub needed)</h3>
+          <ol class="list-decimal ms-5 space-y-2 text-white/60 leading-relaxed">
+            <li data-i18n="rdA1">Save this file as <b class="text-white">index.html</b></li>
+            <li data-i18n="rdA2">Go to <b class="text-white">dash.cloudflare.com</b> → Workers & Pages → Create → Pages → Upload assets (free, no credit card)</li>
+            <li data-i18n="rdA3">Drag & drop the <b class="text-white">index.html</b> file → Deploy. You get a free <b class="text-white">*.pages.dev</b> URL instantly</li>
+            <li data-i18n="rdA4">Optional: add your own domain free via Cloudflare DNS</li>
+          </ol>
+          <h3 class="font-bold text-amber-300 mt-6 mb-3" data-i18n="rdStep2">Option B — GitHub (recommended, auto-updates)</h3>
+          <ol class="list-decimal ms-5 space-y-2 text-white/60 leading-relaxed">
+            <li data-i18n="rdB1">Create a free GitHub repo and upload <b class="text-white">index.html</b></li>
+            <li data-i18n="rdB2">Cloudflare Pages → Connect to Git → select the repo → Deploy. Every push redeploys free</li>
+          </ol>
+        </div>
+        <div>
+          <h3 class="font-bold text-amber-300 mb-3" data-i18n="rdStep3">How to edit (no paid tools)</h3>
+          <ul class="space-y-2 text-white/60 leading-relaxed">
+            <li><b class="text-white" data-i18n="rdE1">Fast way:</b> <span data-i18n="rdE1d">Use the Admin panel above (password admin123) to edit services, prices, coupons & branding — saved in the browser free.</span></li>
+            <li><b class="text-white" data-i18n="rdE2">Code way:</b> <span data-i18n="rdE2d">Open index.html in any free editor (VS Code / Notepad) and search for DEFAULT_STATE to change prices, or TRANSLATIONS to change text.</span></li>
+            <li><b class="text-white" data-i18n="rdE3">WhatsApp number:</b> <span data-i18n="rdE3d">Change it in Admin → Branding, or search for 212681560808 in the code.</span></li>
+          </ul>
+          <div class="mt-6 rounded-2xl bg-black/40 border border-white/10 p-4 font-mono text-[12px] text-emerald-300 leading-relaxed" dir="ltr">
+            $0.00 / month breakdown<br/>Hosting ....... Cloudflare Pages ........ $0<br/>Database ...... localStorage ........... $0<br/>SSL ........... Cloudflare ........... $0<br/>APIs ........... none (WhatsApp link) .. $0<br/>Plugins ........ none .................. $0
+          </div>
+          <button onclick="downloadReadme()" class="btn-gold px-6 py-3 rounded-2xl font-extrabold text-sm mt-5" data-i18n="dlReadme">Download README.txt</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="max-w-4xl mx-auto px-4 lg:px-6 pb-16 reveal">
+  <h2 class="font-display text-3xl font-bold text-center" data-i18n="faqTitle">Frequently asked questions</h2>
+  <div class="space-y-3 mt-8" id="faqList"></div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/10 bg-black/30">
+  <div class="max-w-7xl mx-auto px-4 lg:px-6 py-12 grid md:grid-cols-4 gap-8">
+    <div class="md:col-span-2">
+      <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-400 to-violet-600 flex items-center justify-center font-display font-bold">S</div><div class="font-display font-bold text-lg brand-name">Srvc Foullowrs</div></div>
+      <p class="font-ar text-white/70 mt-3" dir="rtl">خدماتك الرقمية لنمو حساباتك</p>
+      <p class="text-white/45 text-sm mt-1">Your Digital Growth Partner — Votre partenaire de croissance digitale.</p>
+      <a id="footerWa" href="#" target="_blank" rel="noopener" class="btn-wa inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-sm mt-4">WhatsApp: <span dir="ltr">+212 681-560808</span></a>
+    </div>
+    <div><h4 class="font-bold mb-3 text-sm" data-i18n="fLinks">Quick links</h4><div class="space-y-2 text-sm text-white/50"><a href="#catalog" class="block hover:text-amber-300" data-i18n="navCatalog">Services</a><a href="#coupons" class="block hover:text-amber-300" data-i18n="navCoupons">Coupons</a><a href="#order" class="block hover:text-amber-300" data-i18n="navOrder">My Order</a><a href="#admin" class="block hover:text-amber-300" data-i18n="navAdmin">Admin</a></div></div>
+    <div><h4 class="font-bold mb-3 text-sm" data-i18n="fZero">Zero-cost promise</h4><div class="space-y-2 text-sm text-white/50"><div>✓ $0 Hosting (Cloudflare Pages)</div><div>✓ $0 Database (localStorage)</div><div>✓ $0 APIs / plugins</div><div>✓ $0 monthly subscriptions</div></div></div>
+  </div>
+  <div class="border-t border-white/10 py-4 text-center text-[12px] text-white/35">© 2025 <span class="brand-name">Srvc Foullowrs</span> • <span data-i18n="rights">All rights reserved.</span> • <span data-i18n="zeroFoot">Built with a strict zero-cost architecture.</span></div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a id="floatWa" href="#" target="_blank" rel="noopener" class="fixed bottom-5 end-5 z-50 w-14 h-14 rounded-full btn-wa flex items-center justify-center shadow-2xl hover:scale-110 transition" title="WhatsApp">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.1 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.85 9.85 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 9.88 9.89c0 5.45-4.44 9.88-9.89 9.88M12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.16 1.6 5.97L.05 24l6.3-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9C23.95 5.34 18.61 0 12.05 0"/></svg>
+</a>
+
+<div id="toasts" class="fixed bottom-5 start-5 z-[60] space-y-2"></div>
+
+<script>
+/* ============================================================
+   Srvc Foullowrs — ZERO-COST single-file application
+   Hosting: Cloudflare Pages (free) • DB: localStorage (free)
+   WhatsApp orders: wa.me links (free, no API key needed)
+   Admin demo password: admin123  ← CHANGE THIS before launch
+   ============================================================ */
+const ADMIN_PASSWORD = "admin123";
+const STORE_KEY = "srvc_foullowrs_v1";
+
+const PLATFORMS = {
+  "Instagram":{abbr:"IG",grad:"linear-gradient(135deg,#f59e0b,#ec4899,#8b5cf6)"},
+  "TikTok":{abbr:"Tk",grad:"linear-gradient(135deg,#111,#06b6d4)"},
+  "YouTube":{abbr:"YT",grad:"linear-gradient(135deg,#ef4444,#991b1b)"},
+  "Facebook":{abbr:"fb",grad:"linear-gradient(135deg,#3b82f6,#1e40af)"},
+  "Telegram":{abbr:"TG",grad:"linear-gradient(135deg,#38bdf8,#2563eb)"},
+  "Spotify":{abbr:"Sp",grad:"linear-gradient(135deg,#22c55e,#15803d)"},
+  "X (Twitter)":{abbr:"X",grad:"linear-gradient(135deg,#334155,#000)"},
+  "Snapchat":{abbr:"Sn",grad:"linear-gradient(135deg,#facc15,#eab308)"},
+  "LinkedIn":{abbr:"in",grad:"linear-gradient(135deg,#0ea5e9,#075985)"},
+  "WhatsApp":{abbr:"Wa",grad:"linear-gradient(135deg,#25D366,#128C7E)"}
+};
+
+function defaultState(){
+  return {
+    branding:{
+      name:"Srvc Foullowrs",
+      tag_en:"Your Digital Growth Partner",
+      tag_fr:"Votre partenaire de croissance digitale",
+      tag_ar:"خدماتك الرقمية لنمو حساباتك",
+      whatsapp:"212681560808",
+      currency:"MAD",
+      announce:"ZERO-COST ARCHITECTURE — $0 Hosting • $0 Database • $0 Subscriptions • Cloudflare Pages Ready",
+      hero_en:"Premium followers, likes, views & subscribers for every platform. Calculate your price instantly, apply a coupon, and send your order directly on WhatsApp — no accounts, no subscriptions, no hidden fees."
+    },
+    coupons:[
+      {code:"WELCOME20",percent:20,min:0,active:true},
+      {code:"GROWTH10",percent:10,min:0,active:true},
+      {code:"SRVC15",percent:15,min:200,active:true},
+      {code:"BIG50",percent:25,min:500,active:true}
+    ],
+    services:[
+      {id:"s1",platform:"Instagram",price:35,min:100,max:100000,time:"1-6h",badge:"BEST SELLER",name:{en:"Instagram Followers",fr:"Abonnés Instagram",ar:"متابعين انستغرام"},desc:{en:"Real-looking followers with gradual delivery and refill guarantee.",fr:"Abonnés d'apparence réelle, livraison progressive et garantie de remplacement.",ar:"متابعين بمظهر حقيقي مع تسليم تدريجي وضمان تعويض."}},
+      {id:"s2",platform:"Instagram",price:25,min:100,max:200000,time:"0-2h",badge:"",name:{en:"Instagram Likes",fr:"Likes Instagram",ar:"إعجابات انستغرام"},desc:{en:"Instant likes for posts & reels to boost reach.",fr:"Likes instantanés pour publications et reels.",ar:"إعجابات فورية للمنشورات والريلز لزيادة الوصول."}},
+      {id:"s3",platform:"Instagram",price:8,min:500,max:1000000,time:"0-1h",badge:"",name:{en:"Instagram Reels Views",fr:"Vues Reels Instagram",ar:"مشاهدات ريلز انستغرام"},desc:{en:"High-speed reel views to trigger the algorithm.",fr:"Vues rapides pour déclencher l'algorithme.",ar:"مشاهدات سريعة للريلز لتفعيل الخوارزمية."}},
+      {id:"s4",platform:"TikTok",price:40,min:100,max:100000,time:"1-8h",badge:"BEST SELLER",name:{en:"TikTok Followers",fr:"Abonnés TikTok",ar:"متابعين تيك توك"},desc:{en:"Fast followers to grow your TikTok presence.",fr:"Abonnés rapides pour développer votreTikTok.",ar:"متابعين سريعين لنمو حسابك على تيك توك."}},
+      {id:"s5",platform:"TikTok",price:20,min:100,max:500000,time:"0-2h",badge:"",name:{en:"TikTok Likes",fr:"Likes TikTok",ar:"إعجابات تيك توك"},desc:{en:"Instant likes that push videos to the For You page.",fr:"Likes instantanés pour la page Pour Toi.",ar:"إعجابات فورية تدفع الفيديو لصفحة For You."}},
+      {id:"s6",platform:"TikTok",price:10,min:1000,max:2000000,time:"0-1h",badge:"HOT",name:{en:"TikTok Video Views",fr:"Vues vidéo TikTok",ar:"مشاهدات فيديو تيك توك"},desc:{en:"Massive views in minutes for viral potential.",fr:"Vues massives en quelques minutes.",ar:"مشاهدات ضخمة في دقائق لإمكانية الانتشار."}},
+      {id:"s7",platform:"YouTube",price:90,min:50,max:50000,time:"6-24h",badge:"PREMIUM",name:{en:"YouTube Subscribers",fr:"Abonnés YouTube",ar:"مشتركين يوتيوب"},desc:{en:"Channel subscribers with stable, safe delivery.",fr:"Abonnés de chaîne stables et sûrs.",ar:"مشتركين لقناتك بتسليم ثابت وآمن."}},
+      {id:"s8",platform:"YouTube",price:45,min:500,max:1000000,time:"0-3h",badge:"",name:{en:"YouTube Views",fr:"Vues YouTube",ar:"مشاهدات يوتيوب"},desc:{en:"Watch-time friendly views for your videos.",fr:"Vues compatibles avec le temps de visionnage.",ar:"مشاهدات مناسبة لمدة المشاهدة."}},
+      {id:"s9",platform:"YouTube",price:30,min:100,max:300000,time:"0-3h",badge:"",name:{en:"YouTube Likes",fr:"Likes YouTube",ar:"إعجابات يوتيوب"},desc:{en:"Boost engagement and trust on every video.",fr:"Augmentez l'engagement et la confiance.",ar:"عزز التفاعل والثقة في كل فيديو."}},
+      {id:"s10",platform:"Facebook",price:38,min:100,max:200000,time:"2-12h",badge:"",name:{en:"Facebook Page Followers",fr:"Abonnés page Facebook",ar:"متابعين صفحة فيسبوك"},desc:{en:"Grow your Facebook page authority fast.",fr:"Développez l'autorité de votre page Facebook.",ar:"نمِّ سلطة صفحتك على فيسبوك بسرعة."}},
+      {id:"s11",platform:"Facebook",price:22,min:100,max:500000,time:"0-3h",badge:"",name:{en:"Facebook Post Likes",fr:"Likes publication Facebook",ar:"إعجابات منشور فيسبوك"},desc:{en:"Likes for posts, photos and videos.",fr:"Likes pour publications, photos et vidéos.",ar:"إعجابات للمنشورات والصور والفيديوهات."}},
+      {id:"s12",platform:"Telegram",price:85,min:100,max:100000,time:"2-12h",badge:"",name:{en:"Telegram Channel Members",fr:"Membres canal Telegram",ar:"أعضاء قناة تيليغرام"},desc:{en:"Real members for your channel or group.",fr:"Membres réels pour votre canal ou groupe.",ar:"أعضاء حقيقيون لقناتك أو مجموعتك."}},
+      {id:"s13",platform:"Spotify",price:70,min:100,max:100000,time:"6-24h",badge:"",name:{en:"Spotify Followers",fr:"Abonnés Spotify",ar:"متابعين سبوتيفاي"},desc:{en:"Grow your artist or playlist profile.",fr:"Développez votre profil artiste ou playlist.",ar:"نمِّ ملف الفنان أو قائمة التشغيل."}},
+      {id:"s14",platform:"Spotify",price:35,min:1000,max:1000000,time:"1-6h",badge:"",name:{en:"Spotify Streams",fr:"Streams Spotify",ar:"استماعات سبوتيفاي"},desc:{en:"Streams to chart and grow your music.",fr:"Streams pour classer et développer votre musique.",ar:"استماعات للترتيب ونمو موسيقاك."}},
+      {id:"s15",platform:"X (Twitter)",price:80,min:100,max:100000,time:"2-12h",badge:"",name:{en:"X (Twitter) Followers",fr:"Abonnés X (Twitter)",ar:"متابعين منصة X"},desc:{en:"Verified-looking followers for your X profile.",fr:"Abonnés d'apparence vérifiée pour votre profil X.",ar:"متابعين بمظهر موثوق لملفك على X."}},
+      {id:"s16",platform:"Snapchat",price:95,min:100,max:50000,time:"6-24h",badge:"PREMIUM",name:{en:"Snapchat Followers",fr:"Abonnés Snapchat",ar:"متابعين سناب شات"},desc:{en:"Grow your Snapchat audience steadily.",fr:"Développez votre audience Snapchat régulièrement.",ar:"نمِّ جمهورك على سناب شات بثبات."}},
+      {id:"s17",platform:"LinkedIn",price:120,min:100,max:50000,time:"6-24h",badge:"",name:{en:"LinkedIn Followers",fr:"Abonnés LinkedIn",ar:"متابعين لينكدإن"},desc:{en:"Professional followers for profiles & pages.",fr:"Abonnés professionnels pour profils et pages.",ar:"متابعين محترفين للملفات والصفحات."}},
+      {id:"s18",platform:"WhatsApp",price:150,min:100,max:50000,time:"6-24h",badge:"NEW",name:{en:"WhatsApp Channel Members",fr:"Membres canal WhatsApp",ar:"أعضاء قناة واتساب"},desc:{en:"Grow your WhatsApp channel community.",fr:"Développez la communauté de votre canal WhatsApp.",ar:"نمِّ مجتمع قناتك على واتساب."}}
+    ],
+    cart:[],
+    appliedCoupon:null
+  };
+}
+
+const TRANSLATIONS = {
+en:{navHome:"Home",navCatalog:"Services",navCalc:"Calculator",navCoupons:"Coupons",navOrder:"My Order",navAdmin:"Admin",navReadme:"Free Deployment",whatsapp:"WhatsApp",heroBadge:"100% Free to Host • No Subscriptions • Cloudflare Pages Ready",heroDesc:"Premium followers, likes, views & subscribers for every platform. Calculate your price instantly, apply a coupon, and send your order directly on WhatsApp — no accounts, no subscriptions, no hidden fees.",browse:"Browse Services",orderNow:"Order on WhatsApp",statOrders:"Orders Done",statRating:"Avg Rating",statPlatforms:"Platforms",statCost:"Monthly Cost",quickCalc:"Instant Price Calculator",live:"LIVE",delivery:"Delivery",quantity:"Quantity",totalPrice:"Total Price",addToOrder:"Add to Order",buyNow:"Buy Now →",secureNote:"Prices update automatically • No payment needed now — confirm on WhatsApp",todayOrders:"Today's Orders",refundNote:"Fast & Safe Delivery",zeroBadge:"Strict Zero-Cost Architecture",zeroTitle1:"Run your entire business for",zeroDesc:"Every feature that would normally require a paid subscription has been replaced with a free alternative. No paid APIs. No premium plugins. No paid database.",catBadge:"Services Catalog",catTitle1:"Grow on every",catTitle2:"platform",catDesc:"Search, filter by platform, choose a quantity and watch the price calculate automatically.",searchPh:"Search services... e.g. TikTok followers",sortPopular:"Most Popular",sortLow:"Price: Low → High",sortHigh:"Price: High → Low",sortName:"Name A-Z",servicesWord:"services",noSvc:"No services match your search.",cpBadge:"Discount Coupons",cpTitle:"Save more with coupons",cpDesc:"Copy a code and apply it in your order below. Coupons are managed free from the Admin panel.",howTitle:"How it works",step1T:"Choose services & quantity",step1D:"Pick any platform, set the quantity, and the price updates automatically — no negotiation needed.",step2T:"Apply a coupon",step2D:"Enter a discount code like WELCOME20 and the total recalculates instantly.",step3T:"Confirm on WhatsApp",step3D:"One click generates a ready-made WhatsApp message with your full order sent to +212 681-560808.",ordBadge:"Smart Checkout",ordTitle:"Your order & WhatsApp checkout",yourOrder:"Your Order",clear:"Clear all",emptyCart:"Your cart is empty. Add a service to get started.",couponLabel:"Discount coupon",apply:"Apply",subtotal:"Subtotal",discount:"Discount",total:"Total",checkoutTitle:"Checkout details",namePh:"Your name *",phonePh:"Your phone / WhatsApp",linkPh:"Profile / post link (optional)",notesPh:"Notes (optional)",waPreview:"Generated WhatsApp message",sendWa:"Send Order via WhatsApp",copyMsg:"Copy message",payNote:"No online payment required — you confirm & pay directly in the WhatsApp chat.",admBadge:"Free Admin Panel",admTitle:"Manage services, prices & branding",admDesc:"Everything is saved in your browser (localStorage) — a 100% free database. Export a backup anytime.",admLoginT:"Admin Login",admLoginD:"Demo password:",loginBtn:"Login to Admin Panel",tabServices:"Services & Prices",tabBranding:"Branding & Content",tabCoupons:"Coupons",tabData:"Backup & Export",logout:"Logout",saveSvc:"Save Service",resetForm:"Reset form",brandTitle:"Edit branding & content",bName:"Business name",bAnnounce:"Announcement bar",bCurrency:"Currency label",bHero:"Hero description (EN)",saveBrand:"Save branding & apply live",cpAdminT:"Add coupon",addCoupon:"Add Coupon",dataTitle:"Backup, export & reset",dataDesc:"Your data lives in localStorage (free). Export regularly to keep a backup, then import it on any device.",expJson:"Export data (JSON)",expProject:"Download full project (.html)",expReadme:"Download README.txt",impJson:"Import data (JSON)",resetAll:"Reset to defaults",storageCost:"Storage cost",rdBadge:"README — Free Deployment",rdTitle:"Deploy free on Cloudflare Pages in 5 minutes",rdStep1:"Option A — Direct Upload (no GitHub needed)",rdA1:"Save this file as",rdA2:"Go to",rdA3:"Drag & drop the",rdA4:"Optional: add your own domain free via Cloudflare DNS",rdStep2:"Option B — GitHub (recommended, auto-updates)",rdB1:"Create a free GitHub repo and upload",rdB2:"Cloudflare Pages → Connect to Git → select the repo → Deploy. Every push redeploys free",rdStep3:"How to edit (no paid tools)",rdE1:"Fast way:",rdE1d:"Use the Admin panel above (password admin123) to edit services, prices, coupons & branding — saved in the browser free.",rdE2:"Code way:",rdE2d:"Open index.html in any free editor (VS Code / Notepad) and search for DEFAULT_STATE to change prices, or TRANSLATIONS to change text.",rdE3:"WhatsApp number:",rdE3d:"Change it in Admin → Branding, or search for 212681560808 in the code.",dlReadme:"Download README.txt",faqTitle:"Frequently asked questions",fLinks:"Quick links",fZero:"Zero-cost promise",rights:"All rights reserved.",zeroFoot:"Built with a strict zero-cost architecture.",per1000:"per 1000",added:"Added to order ✓",copied:"Copied!",couponOk:"Coupon applied:",couponBad:"Invalid or inactive coupon.",couponMin:"Minimum subtotal not reached.",removed:"Removed",loginOk:"Welcome back, Admin ✓",loginBad:"Wrong password. Try admin123",fillFields:"Please fill the required fields.",saved:"Saved ✓",deleted:"Deleted",imported:"Data imported ✓",resetDone:"Reset to defaults ✓",enterName:"Please enter your name first.",emptyOrder:"Your cart is empty — add a service first.",copyCode:"Copy",useCode:"Use code",minOrder:"Min order",off:"OFF",edit:"Edit",del:"Delete",active:"Active",inactive:"Inactive",faq:[["Is this website really 100% free?","Yes. It is a single HTML file hosted free on Cloudflare Pages. The database is your browser's localStorage and orders go through WhatsApp links — no paid APIs, plugins or subscriptions."],["How do I receive orders?","Customers click 'Send Order via WhatsApp' and a pre-filled message with their full order arrives in your WhatsApp (+212 681-560808). You confirm and take payment in the chat."],["How do I change prices?","Open the Admin panel (password admin123), edit any price per 1000, save — it applies instantly. Export JSON to back up your changes."],["How do coupons work?","Create them free in Admin → Coupons. Customers enter the code at checkout and the discount applies automatically to the total."]],zeroCards:[["Hosting","Cloudflare Pages unlimited bandwidth","$0"],["Database","localStorage in the browser","$0"],["Orders","WhatsApp wa.me links (no API key)","$0"],["SSL + Domain DNS","Cloudflare free HTTPS","$0"]]},
+fr:{navHome:"Accueil",navCatalog:"Services",navCalc:"Calculateur",navCoupons:"Coupons",navOrder:"Ma commande",navAdmin:"Admin",navReadme:"Déploiement gratuit",whatsapp:"WhatsApp",heroBadge:"Hébergement 100% gratuit • Aucun abonnement • Prêt pour Cloudflare Pages",heroDesc:"Abonnés, likes, vues et abonnés premium pour toutes les plateformes. Calculez votre prix instantanément, appliquez un coupon et envoyez votre commande directement sur WhatsApp.",browse:"Voir les services",orderNow:"Commander sur WhatsApp",statOrders:"Commandes réalisées",statRating:"Note moyenne",statPlatforms:"Plateformes",statCost:"Coût mensuel",quickCalc:"Calculateur de prix instantané",live:"EN DIRECT",delivery:"Livraison",quantity:"Quantité",totalPrice:"Prix total",addToOrder:"Ajouter à la commande",buyNow:"Acheter →",secureNote:"Prix mis à jour automatiquement • Aucun paiement maintenant — confirmez sur WhatsApp",todayOrders:"Commandes du jour",refundNote:"Livraison rapide et sûre",zeroBadge:"Architecture strictement zéro coût",zeroTitle1:"Gérez toute votre activité pour",zeroDesc:"Chaque fonctionnalité payante a été remplacée par une alternative gratuite. Aucune API payante, aucun plugin premium, aucune base de données payante.",catBadge:"Catalogue de services",catTitle1:"Grandissez sur chaque",catTitle2:"plateforme",catDesc:"Recherchez, filtrez par plateforme, choisissez une quantité et le prix se calcule automatiquement.",searchPh:"Rechercher... ex. abonnés TikTok",sortPopular:"Plus populaires",sortLow:"Prix croissant",sortHigh:"Prix décroissant",sortName:"Nom A-Z",servicesWord:"services",noSvc:"Aucun service ne correspond à votre recherche.",cpBadge:"Coupons de réduction",cpTitle:"Économisez avec les coupons",cpDesc:"Copiez un code et appliquez-le dans votre commande ci-dessous.",howTitle:"Comment ça marche",step1T:"Choisissez services & quantité",step1D:"Choisissez une plateforme, définissez la quantité, le prix se met à jour automatiquement.",step2T:"Appliquez un coupon",step2D:"Entrez un code comme WELCOME20 et le total est recalculé instantanément.",step3T:"Confirmez sur WhatsApp",step3D:"Un clic génère un message WhatsApp prêt à envoyer à +212 681-560808.",ordBadge:"Commande intelligente",ordTitle:"Votre commande & confirmation WhatsApp",yourOrder:"Votre commande",clear:"Tout effacer",emptyCart:"Votre panier est vide. Ajoutez un service pour commencer.",couponLabel:"Coupon de réduction",apply:"Appliquer",subtotal:"Sous-total",discount:"Réduction",total:"Total",checkoutTitle:"Informations de commande",namePh:"Votre nom *",phonePh:"Votre téléphone / WhatsApp",linkPh:"Lien du profil / publication (optionnel)",notesPh:"Notes (optionnel)",waPreview:"Message WhatsApp généré",sendWa:"Envoyer via WhatsApp",copyMsg:"Copier le message",payNote:"Aucun paiement en ligne requis — confirmez et payez dans le chat WhatsApp.",admBadge:"Panneau Admin gratuit",admTitle:"Gérez services, prix & marque",admDesc:"Tout est enregistré dans votre navigateur (localStorage) — une base de données 100% gratuite.",admLoginT:"Connexion Admin",admLoginD:"Mot de passe démo :",loginBtn:"Se connecter",tabServices:"Services & Prix",tabBranding:"Marque & Contenu",tabCoupons:"Coupons",tabData:"Sauvegarde & Export",logout:"Déconnexion",saveSvc:"Enregistrer",resetForm:"Réinitialiser",brandTitle:"Modifier la marque & le contenu",bName:"Nom de l'entreprise",bAnnounce:"Bandeau d'annonce",bCurrency:"Devise",bHero:"Description (EN)",saveBrand:"Enregistrer & appliquer",cpAdminT:"Ajouter un coupon",addCoupon:"Ajouter",dataTitle:"Sauvegarde, export & réinitialisation",dataDesc:"Vos données sont dans localStorage (gratuit). Exportez régulièrement pour sauvegarder.",expJson:"Exporter (JSON)",expProject:"Télécharger le projet (.html)",expReadme:"Télécharger README.txt",impJson:"Importer (JSON)",resetAll:"Réinitialiser",storageCost:"Coût de stockage",rdBadge:"README — Déploiement gratuit",rdTitle:"Déployez gratuitement sur Cloudflare Pages en 5 minutes",rdStep1:"Option A — Téléversement direct",rdA1:"Enregistrez ce fichier sous",rdA2:"Allez sur",rdA3:"Glissez-déposez le fichier",rdA4:"Optionnel : ajoutez votre domaine via Cloudflare DNS",rdStep2:"Option B — GitHub (recommandé)",rdB1:"Créez un dépôt GitHub gratuit et téléversez",rdB2:"Cloudflare Pages → Connecter Git → Déployer. Chaque mise à jour redéploie gratuitement",rdStep3:"Comment modifier (sans outils payants)",rdE1:"Méthode rapide :",rdE1d:"Utilisez le panneau Admin (mot de passe admin123) pour modifier services, prix, coupons et marque.",rdE2:"Méthode code :",rdE2d:"Ouvrez index.html dans un éditeur gratuit et cherchez DEFAULT_STATE pour les prix.",rdE3:"Numéro WhatsApp :",rdE3d:"Modifiez-le dans Admin → Marque, ou cherchez 212681560808 dans le code.",dlReadme:"Télécharger README.txt",faqTitle:"Questions fréquentes",fLinks:"Liens rapides",fZero:"Promesse zéro coût",rights:"Tous droits réservés.",zeroFoot:"Construit avec une architecture zéro coût.",per1000:"pour 1000",added:"Ajouté à la commande ✓",copied:"Copié !",couponOk:"Coupon appliqué :",couponBad:"Coupon invalide ou inactif.",couponMin:"Sous-total minimum non atteint.",removed:"Supprimé",loginOk:"Bon retour, Admin ✓",loginBad:"Mot de passe incorrect. Essayez admin123",fillFields:"Veuillez remplir les champs requis.",saved:"Enregistré ✓",deleted:"Supprimé",imported:"Données importées ✓",resetDone:"Réinitialisé ✓",enterName:"Veuillez entrer votre nom.",emptyOrder:"Votre panier est vide — ajoutez un service.",copyCode:"Copier",useCode:"Utiliser",minOrder:"Min.",off:"OFF",edit:"Modifier",del:"Suppr.",active:"Actif",inactive:"Inactif",faq:[["Ce site est-il vraiment 100% gratuit ?","Oui. Un seul fichier HTML hébergé gratuitement sur Cloudflare Pages. Base de données = localStorage, commandes via liens WhatsApp."],["Comment reçois-je les commandes ?","Le client clique sur 'Envoyer via WhatsApp' et un message pré-rempli arrive sur votre WhatsApp (+212 681-560808)."],["Comment changer les prix ?","Panneau Admin (admin123) → modifiez le prix pour 1000 → Enregistrer. Application instantanée."],["Comment marchent les coupons ?","Créez-les dans Admin → Coupons. Le client entre le code et la réduction s'applique automatiquement."]],zeroCards:[["Hébergement","Cloudflare Pages, bande passante illimitée","$0"],["Base de données","localStorage du navigateur","$0"],["Commandes","Liens WhatsApp wa.me (sans clé API)","$0"],["SSL + DNS","HTTPS gratuit Cloudflare","$0"]]},
+ar:{navHome:"الرئيسية",navCatalog:"الخدمات",navCalc:"حاسبة الأسعار",navCoupons:"الكوبونات",navOrder:"طلبي",navAdmin:"الإدارة",navReadme:"النشر المجاني",whatsapp:"واتساب",heroBadge:"استضافة مجانية 100% • بدون اشتراكات • جاهز لـ Cloudflare Pages",heroDesc:"متابعين وإعجابات ومشاهدات ومشتركين مميزون لكل المنصات. احسب سعرك فوراً، طبّق كوبوناً، وأرسل طلبك مباشرة عبر واتساب — بدون حسابات أو اشتراكات أو رسوم خفية.",browse:"تصفح الخدمات",orderNow:"اطلب عبر واتساب",statOrders:"طلب مكتمل",statRating:"متوسط التقييم",statPlatforms:"منصة",statCost:"التكلفة الشهرية",quickCalc:"حاسبة الأسعار الفورية",live:"مباشر",delivery:"التسليم",quantity:"الكمية",totalPrice:"السعر الإجمالي",addToOrder:"أضف إلى الطلب",buyNow:"اشترِ الآن ←",secureNote:"الأسعار تتحدث تلقائياً • لا دفع الآن — أكّد عبر واتساب",todayOrders:"طلبات اليوم",refundNote:"تسليم سريع وآمن",zeroBadge:"بنية صفرية التكلفة تماماً",zeroTitle1:"شغّل عملك بالكامل مقابل",zeroDesc:"كل ميزة كانت تتطلب اشتراكاً مدفوعاً تم استبدالها ببديل مجاني. لا واجهات مدفوعة، لا إضافات مميزة، لا قاعدة بيانات مدفوعة.",catBadge:"كتالوج الخدمات",catTitle1:"انمُ على كل",catTitle2:"منصة",catDesc:"ابحث، صفِّ حسب المنصة، اختر الكمية وشاهد السعر يُحسب تلقائياً.",searchPh:"ابحث عن خدمة... مثال: متابعين تيك توك",sortPopular:"الأكثر شعبية",sortLow:"السعر: من الأقل",sortHigh:"السعر: من الأعلى",sortName:"الاسم أ-ي",servicesWord:"خدمة",noSvc:"لا توجد خدمات تطابق بحثك.",cpBadge:"كوبونات الخصم",cpTitle:"وفّر أكثر مع الكوبونات",cpDesc:"انسخ كوداً وطبّقه في طلبك أدناه. تُدار الكوبونات مجاناً من لوحة الإدارة.",howTitle:"كيف يعمل الأمر",step1T:"اختر الخدمات والكمية",step1D:"اختر منصة، حدّد الكمية، ويتحدث السعر تلقائياً — بدون مفاوضة.",step2T:"طبّق كوبوناً",step2D:"أدخل كوداً مثل WELCOME20 ويُعاد حساب الإجمالي فوراً.",step3T:"أكّد عبر واتساب",step3D:"نقرة واحدة تُنشئ رسالة واتساب جاهزة تُرسل إلى +212 681-560808.",ordBadge:"دفع ذكي",ordTitle:"طلبك وتأكيد واتساب",yourOrder:"طلبك",clear:"مسح الكل",emptyCart:"سلتك فارغة. أضف خدمة للبدء.",couponLabel:"كوبون الخصم",apply:"تطبيق",subtotal:"المجموع الفرعي",discount:"الخصم",total:"الإجمالي",checkoutTitle:"بيانات الطلب",namePh:"اسمك *",phonePh:"هاتفك / واتساب",linkPh:"رابط الحساب / المنشور (اختياري)",notesPh:"ملاحظات (اختياري)",waPreview:"رسالة واتساب المُولّدة",sendWa:"إرسال الطلب عبر واتساب",copyMsg:"نسخ الرسالة",payNote:"لا حاجة للدفع أونلاين — أكّد وادفع مباشرة في محادثة واتساب.",admBadge:"لوحة إدارة مجانية",admTitle:"إدارة الخدمات والأسعار والهوية",admDesc:"كل شيء يُحفظ في متصفحك (localStorage) — قاعدة بيانات مجانية 100%. صدّر نسخة احتياطية في أي وقت.",admLoginT:"دخول الإدارة",admLoginD:"كلمة المرور التجريبية:",loginBtn:"دخول لوحة الإدارة",tabServices:"الخدمات والأسعار",tabBranding:"الهوية والمحتوى",tabCoupons:"الكوبونات",tabData:"النسخ الاحتياطي",logout:"خروج",saveSvc:"حفظ الخدمة",resetForm:"إعادة تعيين النموذج",brandTitle:"تعديل الهوية والمحتوى",bName:"اسم العمل",bAnnounce:"شريط الإعلان",bCurrency:"العملة",bHero:"وصف الواجهة (EN)",saveBrand:"حفظ وتطبيق مباشرة",cpAdminT:"إضافة كوبون",addCoupon:"إضافة كوبون",dataTitle:"النسخ الاحتياطي والتصدير",dataDesc:"بياناتك في localStorage (مجاني). صدّر بانتظام للحفاظ على نسخة احتياطية.",expJson:"تصدير البيانات (JSON)",expProject:"تحميل المشروع الكامل (.html)",expReadme:"تحميل README.txt",impJson:"استيراد البيانات (JSON)",resetAll:"إعادة التعيين",storageCost:"تكلفة التخزين",rdBadge:"README — النشر المجاني",rdTitle:"انشر مجاناً على Cloudflare Pages في 5 دقائق",rdStep1:"الخيار أ — رفع مباشر (بدون GitHub)",rdA1:"احفظ هذا الملف باسم",rdA2:"اذهب إلى",rdA3:"اسحب وأفلت الملف",rdA4:"اختياري: أضف دومينك مجاناً عبر Cloudflare DNS",rdStep2:"الخيار ب — GitHub (موصى به)",rdB1:"أنشئ مستودع GitHub مجاني وارفع",rdB2:"Cloudflare Pages ← اتصل بـ Git ← انشر. كل تحديث يعيد النشر مجاناً",rdStep3:"كيفية التعديل (بدون أدوات مدفوعة)",rdE1:"الطريقة السريعة:",rdE1d:"استخدم لوحة الإدارة (كلمة المرور admin123) لتعديل الخدمات والأسعار والكوبونات والهوية.",rdE2:"طريقة الكود:",rdE2d:"افتح index.html في أي محرر مجاني وابحث عن DEFAULT_STATE لتغيير الأسعار.",rdE3:"رقم واتساب:",rdE3d:"غيّره في الإدارة ← الهوية، أو ابحث عن 212681560808 في الكود.",dlReadme:"تحميل README.txt",faqTitle:"الأسئلة الشائعة",fLinks:"روابط سريعة",fZero:"وعد صفر التكلفة",rights:"جميع الحقوق محفوظة.",zeroFoot:"مبني ببنية صفرية التكلفة.",per1000:"لكل 1000",added:"أُضيف إلى الطلب ✓",copied:"تم النسخ!",couponOk:"تم تطبيق الكوبون:",couponBad:"كوبون غير صالح أو غير مفعّل.",couponMin:"لم يتم بلوغ الحد الأدنى للمجموع.",removed:"تمت الإزالة",loginOk:"مرحباً بعودتك أيها المدير ✓",loginBad:"كلمة مرور خاطئة. جرّب admin123",fillFields:"يرجى ملء الحقول المطلوبة.",saved:"تم الحفظ ✓",deleted:"تم الحذف",imported:"تم الاستيراد ✓",resetDone:"تمت إعادة التعيين ✓",enterName:"يرجى إدخال اسمك أولاً.",emptyOrder:"سلتك فارغة — أضف خدمة أولاً.",copyCode:"نسخ",useCode:"استخدام الكود",minOrder:"حد أدنى",off:"خصم",edit:"تعديل",del:"حذف",active:"مفعّل",inactive:"غير مفعّل",faq:[["هل هذا الموقع مجاني حقاً 100%؟","نعم. ملف HTML واحد مستضاف مجاناً على Cloudflare Pages. قاعدة البيانات هي localStorage والطلبات عبر روابط واتساب."],["كيف أستلم الطلبات؟","يضغط العميل على «إرسال عبر واتساب» فتصل رسالة جاهزة بطلبه إلى واتسابك (+212 681-560808)."],["كيف أغيّر الأسعار؟","لوحة الإدارة (admin123) ← عدّل سعر كل 1000 ← حفظ. يُطبق فوراً."],["كيف تعمل الكوبونات؟","أنشئها في الإدارة ← الكوبونات. يدخل العميل الكود ويُطبق الخصم تلقائياً."]],zeroCards:[["الاستضافة","Cloudflare Pages — نطاق غير محدود","$0"],["قاعدة البيانات","localStorage في المتصفح","$0"],["الطلبات","روابط واتساب wa.me (بدون مفتاح API)","$0"],["SSL + DNS","HTTPS مجاني من Cloudflare","$0"]]}
+};
+
+let lang = localStorage.getItem("srvc_lang") || "en";
+let activePlatform = "All";
+let adminLogged = false;
+
+function loadState(){
+  try{ const raw = localStorage.getItem(STORE_KEY); if(raw){ const d = JSON.parse(raw); const def = defaultState(); return {...def, ...d, branding:{...def.branding, ...(d.branding||{})} }; } }catch(e){}
+  return defaultState();
+}
+let DB = loadState();
+function save(){ localStorage.setItem(STORE_KEY, JSON.stringify(DB)); }
+function t(k){ return (TRANSLATIONS[lang] && TRANSLATIONS[lang][k]) || TRANSLATIONS.en[k] || k; }
+function cur(){ return DB.branding.currency || "MAD"; }
+function fmt(n){ return Number(n||0).toFixed(2); }
+function fmtInt(n){ return Number(n||0).toLocaleString(lang==="ar"?"ar-MA":"en-US"); }
+function waNumber(){ return (DB.branding.whatsapp||"212681560808").replace(/\D/g,""); }
+function waLink(msg){ return "https://wa.me/"+waNumber()+"?text="+encodeURIComponent(msg); }
+function $(id){ return document.getElementById(id); }
+function scrollToId(id){ const el=$(id); if(el) el.scrollIntoView({behavior:"smooth"}); }
+function toast(msg, ok=true){
+  const el=document.createElement("div");
+  el.className="toast glass2 rounded-2xl px-4 py-3 text-sm font-bold flex items-center gap-2 shadow-xl "+(ok?"border-emerald-400/40":"border-red-400/40");
+  el.innerHTML='<span class="'+(ok?"text-emerald-400":"text-red-400")+'">'+(ok?"✓":"!")+"</span>"+msg;
+  $("toasts").appendChild(el); setTimeout(()=>{ el.style.opacity="0"; el.style.transition=".4s"; setTimeout(()=>el.remove(),400); },2600);
+}
+function download(filename, content, type="text/plain"){
+  const blob=new Blob([content],{type:type+";charset=utf-8"}); const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob); a.download=filename; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),2000);
+}
+
+/* ---------- LANGUAGE ---------- */
+function setLang(l){
+  lang=l; localStorage.setItem("srvc_lang",l);
+  document.documentElement.lang = l==="ar" ? "ar" : l;
+  document.documentElement.dir = l==="ar" ? "rtl" : "ltr";
+  document.querySelectorAll(".lang-btn").forEach(b=>{
+    const on = b.dataset.lang===l;
+    b.classList.toggle("btn-gold",on); b.classList.toggle("text-black",on);
+  });
+  document.querySelectorAll("[data-i18n]").forEach(el=>{ const v=t(el.dataset.i18n); if(typeof v==="string") el.textContent=v; });
+  document.querySelectorAll("[data-i18n-ph]").forEach(el=>{ el.placeholder=t(el.dataset.i18nPh); });
+  applyBranding(); renderZeroCards(); renderPlatformChips(); renderServices(); renderCouponsPublic(); renderFaq(); renderCart(); fillHeroSelect(); heroCalc(); renderAdminAll();
+}
+function applyBranding(){
+  const b=DB.branding;
+  document.title=b.name+" — "+(lang==="ar"?b.tag_ar:lang==="fr"?b.tag_fr:b.tag_en);
+  document.querySelectorAll(".brand-name").forEach(e=>e.textContent=b.name);
+  document.querySelectorAll(".brand-tagline-small").forEach(e=>e.textContent= lang==="ar"?b.tag_ar:lang==="fr"?b.tag_fr:b.tag_en);
+  $("heroTagline").textContent = lang==="ar"?b.tag_ar:lang==="fr"?b.tag_fr:b.tag_en;
+  $("heroAr").textContent=b.tag_ar;
+  if(lang==="en") document.querySelector("[data-i18n='heroDesc']").textContent=b.hero_en;
+  $("announceText").textContent=b.announce;
+  document.querySelectorAll(".cur").forEach(e=>e.textContent=cur());
+  const wa = waLink("Hello "+b.name+"! I want to place an order.");
+  ["headerWa","heroWa","footerWa","floatWa"].forEach(id=>{ if($(id)) $(id).href=wa; });
+}
+
+/* ---------- ZERO CARDS / MARQUEE / FAQ ---------- */
+function renderZeroCards(){
+  $("zeroCards").innerHTML = t("zeroCards").map(c=>`
+    <div class="glass2 rounded-3xl p-5 card-hover">
+      <div class="flex items-start justify-between"><div class="font-bold">${c[0]}</div><span class="font-display font-bold text-emerald-400 text-xl">${c[2]}</span></div>
+      <p class="text-white/45 text-[13px] mt-2 leading-relaxed">${c[1]}</p>
+    </div>`).join("");
+}
+function renderMarquee(){
+  const names=Object.keys(PLATFORMS);
+  const html=names.map(n=>`<span class="flex items-center gap-3"><span class="w-8 h-8 rounded-lg flex items-center justify-center text-[11px] font-bold text-white" style="background:${PLATFORMS[n].grad}">${PLATFORMS[n].abbr}</span>${n}</span><span class="text-amber-400">•</span>`).join("");
+  $("marqueeTrack").innerHTML=html+html;
+}
+function renderFaq(){
+  $("faqList").innerHTML = t("faq").map(f=>`<details class="glass2 rounded-2xl p-5 group"><summary class="font-bold text-[15px] flex justify-between gap-3">${f[0]}<span class="text-amber-400 group-open:rotate-180 transition">▾</span></summary><p class="text-white/50 text-sm mt-3 leading-relaxed">${f[1]}</p></details>`).join("");
+}
+
+/* ---------- SERVICES ---------- */
+function platformMeta(p){ return PLATFORMS[p] || {abbr:(p||"?").slice(0,2),grad:"linear-gradient(135deg,#7c3aed,#2563eb)"}; }
+function renderPlatformChips(){
+  const plats=["All",...new Set(DB.services.map(s=>s.platform))];
+  $("platformChips").innerHTML = plats.map(p=>{
+    const m=p==="All"?{abbr:"★",grad:"linear-gradient(135deg,#f5c518,#f97316)"}:platformMeta(p);
+    return `<button onclick="setPlatform('${p.replace(/'/g,"\\'")}')" class="chip ${activePlatform===p?"active":""} glass px-4 py-2 rounded-full text-[13px] font-bold flex items-center gap-2 hover:border-amber-400/50 transition">
+      <span class="w-6 h-6 rounded-md flex items-center justify-center text-[10px] font-extrabold text-white" style="background:${m.grad}">${m.abbr}</span>${p}</button>`;
+  }).join("");
+}
+function setPlatform(p){ activePlatform=p; renderPlatformChips(); renderServices(); }
+function getFiltered(){
+  const q=($("searchInput").value||"").toLowerCase().trim();
+  let list=DB.services.filter(s=>{
+    const okP = activePlatform==="All" || s.platform===activePlatform;
+    const okQ = !q || [s.name.en,s.name.fr,s.name.ar,s.platform].join(" ").toLowerCase().includes(q);
+    return okP && okQ;
+  });
+  const sort=$("sortSelect").value;
+  if(sort==="low") list.sort((a,b)=>a.price-b.price);
+  else if(sort==="high") list.sort((a,b)=>b.price-a.price);
+  else if(sort==="name") list.sort((a,b)=>a.name[lang].localeCompare(b.name[lang]));
+  return list;
+}
+function renderServices(){
+  const list=getFiltered();
+  $("svcCount").textContent=list.length;
+  $("noSvc").classList.toggle("hidden", list.length>0);
+  $("servicesGrid").innerHTML=list.map(s=>{
+    const m=platformMeta(s.platform);
+    const price=qty=>fmt(qty/1000*s.price);
+    return `<article class="glass2 rounded-[24px] p-5 card-hover flex flex-col">
+      <div class="flex items-start justify-between gap-2">
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 rounded-2xl flex items-center justify-center font-display font-bold text-[15px] shrink-0" style="background:${m.grad}">${m.abbr}</div>
+          <div><div class="text-[11px] font-extrabold tracking-wider text-amber-300 uppercase">${s.platform}</div><h3 class="font-bold leading-snug" ${lang==="ar"?'dir="rtl"':''}>${s.name[lang]||s.name.en}</h3></div>
+        </div>
+        ${s.badge?`<span class="text-[9px] font-extrabold bg-amber-400 text-black px-2 py-1 rounded-full whitespace-nowrap">${s.badge}</span>`:""}
+      </div>
+      <p class="text-white/45 text-[12.5px] leading-relaxed mt-3 line-clamp-2 flex-1" ${lang==="ar"?'dir="rtl"':''}>${s.desc[lang]||s.desc.en}</p>
+      <div class="flex items-center gap-2 mt-3 text-[11px] text-white/45 font-semibold"><span>⏱ ${s.time}</span><span>•</span><span>${fmtInt(s.min)} – ${fmtInt(s.max)}</span></div>
+      <div class="mt-4">
+        <div class="flex justify-between text-[11px] font-bold text-white/50 mb-1.5"><span>${t("quantity")}</span><span class="text-amber-300">${fmt(s.price)} ${cur()} ${t("per1000")}</span></div>
+        <input type="number" id="qty_${s.id}" value="1000" min="${s.min}" max="${s.max}" step="100" class="field !py-2.5 text-center font-bold" oninput="updateCardPrice('${s.id}')"/>
+        <div class="flex gap-1.5 mt-2 flex-wrap">${[100,500,1000,5000,10000].map(q=>`<button class="qty-btn" onclick="setCardQty('${s.id}',${q})">${q>=1000?(q/1000)+"K":q}</button>`).join("")}</div>
+      </div>
+      <div class="flex items-end justify-between mt-4 pt-4 border-t border-white/10">
+        <div><div class="text-[10px] text-white/40 font-bold uppercase">${t("totalPrice")}</div><div class="font-display text-2xl font-bold grad-gold"><span id="price_${s.id}">${price(1000)}</span> <span class="text-[13px]">${cur()}</span></div></div>
+        <div class="flex gap-2">
+          <button onclick="addToCart('${s.id}')" class="btn-gold px-4 py-2.5 rounded-xl font-extrabold text-[12.5px]">${t("addToOrder")}</button>
+          <button onclick="buyNow('${s.id}')" class="btn-wa px-3.5 py-2.5 rounded-xl font-extrabold text-[12.5px]">WhatsApp</button>
+        </div>
+      </div>
+    </article>`;
+  }).join("");
+}
+function setCardQty(id,q){ const el=$("qty_"+id); if(el){ el.value=q; updateCardPrice(id);} }
+function updateCardPrice(id){
+  const s=DB.services.find(x=>x.id===id); if(!s) return;
+  const q=Math.max(0,Number($("qty_"+id).value||0));
+  $("price_"+id).textContent=fmt(q/1000*s.price);
+}
+function addToCart(id, qtyOverride){
+  const s=DB.services.find(x=>x.id===id); if(!s) return;
+  const qty = qtyOverride || Math.max(s.min, Number(($("qty_"+id)||{}).value||1000));
+  const ex=DB.cart.find(c=>c.id===id);
+  if(ex) ex.qty=Math.min(s.max, ex.qty+qty); else DB.cart.push({id,qty});
+  save(); renderCart(); toast(t("added"));
+}
+function buyNow(id){
+  const s=DB.services.find(x=>x.id===id); if(!s) return;
+  const qty=Math.max(s.min, Number(($("qty_"+id)||{}).value||1000));
+  const msg=`Hello ${DB.branding.name}! I want to order:\n• ${s.platform} — ${s.name.en}\nQuantity: ${fmtInt(qty)}\nPrice: ${fmt(qty/1000*s.price)} ${cur()}\nPlease confirm availability. Thank you!`;
+  window.open(waLink(msg),"_blank");
+}
+
+/* ---------- HERO CALCULATOR ---------- */
+function fillHeroSelect(){
+  $("heroSvcSelect").innerHTML=DB.services.map(s=>`<option value="${s.id}">${s.platform} — ${s.name.en}</option>`).join("");
+}
+function heroSvc(){ return DB.services.find(s=>s.id===$("heroSvcSelect").value) || DB.services[0]; }
+function heroCalc(){
+  const s=heroSvc(); if(!s) return;
+  const m=platformMeta(s.platform);
+  $("heroPlatIcon").style.background=m.grad; $("heroPlatIcon").textContent=m.abbr;
+  $("heroSvcName").textContent=(s.name[lang]||s.name.en);
+  $("heroPer1000").textContent=fmt(s.price);
+  const q=Number($("heroQty").value||0);
+  $("heroQtyLabel").textContent=fmtInt(q);
+  $("heroPrice").textContent=fmt(q/1000*s.price);
+  $("heroUnitNote").textContent=fmt(s.price)+" × "+(q/1000);
+}
+function heroSetQty(q){ $("heroQty").value=q; heroCalc(); }
+function heroAddToCart(){ const s=heroSvc(); if(s) addToCart(s.id, Number($("heroQty").value||1000)); }
+function heroBuyNow(){ const s=heroSvc(); if(!s) return; const q=Number($("heroQty").value||1000); const msg=`Hello ${DB.branding.name}! I want to order:\n• ${s.platform} — ${s.name.en}\nQuantity: ${fmtInt(q)}\nPrice: ${fmt(q/1000*s.price)} ${cur()}\nPlease confirm availability. Thank you!`; window.open(waLink(msg),"_blank"); }
+
+/* ---------- COUPONS (public) ---------- */
+function renderCouponsPublic(){
+  const act=DB.coupons.filter(c=>c.active);
+  $("couponsGrid").innerHTML=act.length? act.map(c=>`
+    <div class="glass2 rounded-3xl p-5 card-hover relative overflow-hidden">
+      <div class="absolute -top-6 -end-6 w-24 h-24 rounded-full bg-amber-400/10"></div>
+      <div class="font-display text-4xl font-bold grad-gold">-${c.percent}%<span class="text-base">${t("off")}</span></div>
+      <div class="font-mono font-bold text-lg mt-2 tracking-widest">${c.code}</div>
+      <div class="text-[12px] text-white/45 mt-1">${t("minOrder")}: ${fmt(c.min)} ${cur()}</div>
+      <div class="flex gap-2 mt-4">
+        <button onclick="copyCode('${c.code}')" class="flex-1 glass py-2.5 rounded-xl font-bold text-[13px] hover:border-amber-400/50">${t("copyCode")}</button>
+        <button onclick="useCode('${c.code}')" class="flex-1 btn-gold py-2.5 rounded-xl font-extrabold text-[13px]">${t("useCode")}</button>
+      </div>
+    </div>`).join("") : `<div class="col-span-full text-center text-white/40 py-8">No active coupons.</div>`;
+}
+function copyCode(code){ navigator.clipboard && navigator.clipboard.writeText(code); toast(code+" — "+t("copied")); }
+function useCode(code){ $("couponInput").value=code; applyCoupon(); scrollToId("order"); }
+
+/* ---------- CART & CHECKOUT ---------- */
+function cartDetailed(){ return DB.cart.map(c=>{ const s=DB.services.find(x=>x.id===c.id); return s? {...s,qty:c.qty,line:c.qty/1000*s.price}:null; }).filter(Boolean); }
+function totals(){
+  const items=cartDetailed();
+  const sub=items.reduce((a,i)=>a+i.line,0);
+  let disc=0;
+  if(DB.appliedCoupon){ const c=DB.coupons.find(x=>x.code===DB.appliedCoupon && x.active); if(c && sub>=c.min) disc=sub*c.percent/100; }
+  return {items,sub,disc,total:Math.max(0,sub-disc)};
+}
+function renderCart(){
+  const {items,sub,disc,total}=totals();
+  $("cartBadge").textContent=items.length;
+  $("emptyCart").style.display=items.length?"none":"block";
+  $("cartItems").innerHTML=items.map(i=>{
+    const m=platformMeta(i.platform);
+    return `<div class="glass rounded-2xl p-3.5 flex items-center gap-3">
+      <div class="w-11 h-11 rounded-xl flex items-center justify-center font-display font-bold text-[13px] shrink-0" style="background:${m.grad}">${m.abbr}</div>
+      <div class="flex-1 min-w-0">
+        <div class="font-bold text-[14px] truncate" ${lang==="ar"?'dir="rtl"':''}>${i.name[lang]||i.name.en}</div>
+        <div class="text-[11px] text-white/45">${i.platform} • ${fmt(i.price)} ${cur()} / 1000</div>
+        <div class="flex items-center gap-2 mt-1.5">
+          <button onclick="changeQty('${i.id}',-100)" class="w-7 h-7 rounded-lg glass font-bold">−</button>
+          <input type="number" value="${i.qty}" min="${i.min}" max="${i.max}" step="100" onchange="setQty('${i.id}',this.value)" class="field !w-[90px] !py-1.5 text-center !text-[12px] font-bold"/>
+          <button onclick="changeQty('${i.id}',100)" class="w-7 h-7 rounded-lg glass font-bold">+</button>
+        </div>
+      </div>
+      <div class="text-end shrink-0"><div class="font-display font-bold grad-gold">${fmt(i.line)} <span class="text-[11px]">${cur()}</span></div>
+      <button onclick="removeItem('${i.id}')" class="text-[11px] text-red-300 font-bold hover:underline mt-1">${t("del")}</button></div>
+    </div>`;
+  }).join("");
+  $("subTotalVal").textContent=fmt(sub);
+  $("discountRow").style.display=disc>0?"flex":"none";
+  if(disc>0){ $("discountVal").textContent=fmt(disc); $("appliedCode").textContent=DB.appliedCoupon; }
+  $("grandTotal").textContent=fmt(total);
+  updatePreview();
+}
+function changeQty(id,d){ const it=DB.cart.find(c=>c.id===id); if(!it) return; const s=DB.services.find(x=>x.id===id); it.qty=Math.max(s.min,Math.min(s.max,it.qty+d)); save(); renderCart(); }
+function setQty(id,v){ const it=DB.cart.find(c=>c.id===id); if(!it) return; const s=DB.services.find(x=>x.id===id); it.qty=Math.max(s.min,Math.min(s.max,Number(v)||s.min)); save(); renderCart(); }
+function removeItem(id){ DB.cart=DB.cart.filter(c=>c.id!==id); save(); renderCart(); toast(t("removed"),false); }
+function clearCart(){ DB.cart=[]; DB.appliedCoupon=null; $("couponInput").value=""; $("couponMsg").textContent=""; save(); renderCart(); }
+function applyCoupon(){
+  const code=($("couponInput").value||"").trim().toUpperCase();
+  const msg=$("couponMsg");
+  if(!code){ DB.appliedCoupon=null; msg.textContent=""; renderCart(); return; }
+  const c=DB.coupons.find(x=>x.code===code && x.active);
+  const {sub}=totals();
+  if(!c){ DB.appliedCoupon=null; msg.className="text-[12px] mt-2 font-semibold text-red-300"; msg.textContent=t("couponBad"); }
+  else if(sub < c.min){ DB.appliedCoupon=null; msg.className="text-[12px] mt-2 font-semibold text-red-300"; msg.textContent=t("couponMin")+" ("+fmt(c.min)+" "+cur()+")"; }
+  else { DB.appliedCoupon=code; msg.className="text-[12px] mt-2 font-semibold text-emerald-300"; msg.textContent="✓ "+t("couponOk")+" -"+c.percent+"%"; toast(t("couponOk")+" "+code); }
+  save(); renderCart();
+}
+function buildMessage(){
+  const {items,sub,disc,total}=totals();
+  const name=$("custName").value.trim(), phone=$("custPhone").value.trim(), link=$("custLink").value.trim(), notes=$("custNotes").value.trim();
+  let L=[];
+  L.push(`🛒 New Order — ${DB.branding.name}`);
+  L.push("━━━━━━━━━━━━━━━");
+  if(name) L.push(`Name: ${name}`);
+  if(phone) L.push(`Phone: ${phone}`);
+  if(link) L.push(`Link: ${link}`);
+  L.push("━━━━━━━━━━━━━━━");
+  L.push("ORDER:");
+  items.forEach((i,ix)=>{ L.push(`${ix+1}) ${i.platform} — ${i.name.en}\n   Qty: ${fmtInt(i.qty)} • ${fmt(i.line)} ${cur()}`); });
+  L.push("━━━━━━━━━━━━━━━");
+  L.push(`Subtotal: ${fmt(sub)} ${cur()}`);
+  if(disc>0) L.push(`Coupon (${DB.appliedCoupon}): -${fmt(disc)} ${cur()}`);
+  L.push(`TOTAL: ${fmt(total)} ${cur()}`);
+  if(notes) L.push(`Notes: ${notes}`);
+  L.push("━━━━━━━━━━━━━━━");
+  L.push("Please confirm availability & payment. Thank you!");
+  return L.join("\n");
+}
+function updatePreview(){ $("waPreview").value = totals().items.length ? buildMessage() : "—"; }
+["custName","custPhone","custLink","custNotes"].forEach(id=>{ document.addEventListener("input",e=>{ if(e.target.id===id) updatePreview(); }); });
+function sendWhatsApp(){
+  if(!totals().items.length){ toast(t("emptyOrder"),false); return; }
+  if(!$("custName").value.trim()){ toast(t("enterName"),false); $("custName").focus(); return; }
+  window.open(waLink(buildMessage()),"_blank");
+}
+function copyPreview(){ if(!$("waPreview").value || $("waPreview").value==="—"){ toast(t("emptyOrder"),false); return; } navigator.clipboard && navigator.clipboard.writeText($("waPreview").value); toast(t("copied")); }
+
+/* ---------- ADMIN ---------- */
+function adminLogin(){
+  if($("adminPass").value===ADMIN_PASSWORD){
+    adminLogged=true; $("adminLogin").classList.add("hidden"); $("adminPanel").classList.remove("hidden");
+    $("adminLoginErr").textContent=""; toast(t("loginOk")); renderAdminAll(); scrollToId("admin");
+  } else { $("adminLoginErr").textContent=t("loginBad"); }
+}
+function adminLogout(){ adminLogged=false; $("adminLogin").classList.remove("hidden"); $("adminPanel").classList.add("hidden"); $("adminPass").value=""; }
+function adminTab(name,btn){
+  document.querySelectorAll(".admin-tab").forEach(p=>p.classList.add("hidden"));
+  $("tab-"+name).classList.remove("hidden");
+  document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active"));
+  btn.classList.add("active");
+}
+function renderAdminAll(){
+  // platform select
+  const psel=$("f_platform"); if(psel && !psel.options.length){ psel.innerHTML=Object.keys(PLATFORMS).map(p=>`<option>${p}</option>`).join(""); }
+  // branding fields
+  if(!$("b_name").dataset.filled){
+    $("b_name").value=DB.branding.name; $("b_whatsapp").value=DB.branding.whatsapp;
+    $("b_tag_en").value=DB.branding.tag_en; $("b_tag_fr").value=DB.branding.tag_fr; $("b_tag_ar").value=DB.branding.tag_ar;
+    $("b_announce").value=DB.branding.announce; $("b_currency").value=DB.branding.currency; $("b_hero").value=DB.branding.hero_en;
+    $("b_name").dataset.filled="1";
+  }
+  $("adminSvcList").innerHTML=DB.services.map(s=>{ const m=platformMeta(s.platform); return `
+    <div class="glass rounded-2xl p-3.5 flex items-center gap-3 flex-wrap">
+      <div class="w-10 h-10 rounded-xl flex items-center justify-center font-display font-bold text-[12px] shrink-0" style="background:${m.grad}">${m.abbr}</div>
+      <div class="flex-1 min-w-[160px]"><div class="font-bold text-[14px]">${s.name.en} <span class="text-white/35 font-normal text-[12px]">(${s.platform})</span></div>
+      <div class="text-[12px] text-white/45">${fmt(s.price)} ${cur()} / 1000 • ${fmtInt(s.min)}–${fmtInt(s.max)} • ${s.time}</div></div>
+      <button onclick="editService('${s.id}')" class="btn-vio px-4 py-2 rounded-xl font-bold text-[12px]">${t("edit")}</button>
+      <button onclick="deleteService('${s.id}')" class="px-4 py-2 rounded-xl font-bold text-[12px] bg-red-500/15 border border-red-400/30 text-red-300">${t("del")}</button>
+    </div>`;}).join("");
+  $("adminCpList").innerHTML=DB.coupons.map(c=>`
+    <div class="glass rounded-2xl p-3.5 flex items-center gap-3 flex-wrap">
+      <div class="font-mono font-bold tracking-widest">${c.code}</div>
+      <div class="text-sm text-white/50">-${c.percent}% • ${t("minOrder")} ${fmt(c.min)} ${cur()}</div>
+      <span class="text-[11px] font-bold px-2.5 py-1 rounded-full ${c.active?"bg-emerald-400/15 text-emerald-300":"bg-white/10 text-white/40"}">${c.active?t("active"):t("inactive")}</span>
+      <button onclick="toggleCoupon('${c.code}')" class="glass px-4 py-2 rounded-xl font-bold text-[12px] ms-auto">${c.active?t("inactive"):t("active")}</button>
+      <button onclick="deleteCoupon('${c.code}')" class="px-4 py-2 rounded-xl font-bold text-[12px] bg-red-500/15 border border-red-400/30 text-red-300">${t("del")}</button>
+    </div>`).join("");
+  $("statSvc").textContent=DB.services.length; $("statCp").textContent=DB.coupons.length;
+}
+function resetSvcForm(){ ["f_id","f_name_en","f_name_fr","f_name_ar","f_desc_en","f_desc_fr","f_desc_ar","f_price","f_time"].forEach(id=>$(id).value=""); $("f_min").value=100; $("f_max").value=100000; $("svcFormTitle").textContent="Add / Edit Service"; }
+function editService(id){
+  const s=DB.services.find(x=>x.id===id); if(!s) return;
+  $("f_id").value=s.id; $("f_platform").value=s.platform; $("f_price").value=s.price; $("f_min").value=s.min; $("f_max").value=s.max; $("f_time").value=s.time;
+  $("f_name_en").value=s.name.en; $("f_name_fr").value=s.name.fr; $("f_name_ar").value=s.name.ar;
+  $("f_desc_en").value=s.desc.en; $("f_desc_fr").value=s.desc.fr; $("f_desc_ar").value=s.desc.ar;
+  $("svcFormTitle").textContent="Edit: "+s.name.en; scrollToId("admin");
+}
+function saveService(){
+  const name_en=$("f_name_en").value.trim(), price=Number($("f_price").value);
+  if(!name_en || isNaN(price) || price<0){ toast(t("fillFields"),false); return; }
+  const data={
+    platform:$("f_platform").value, price, time:$("f_time").value.trim()||"1-6h", badge:"",
+    min:Math.max(1,Number($("f_min").value)||100), max:Math.max(1000,Number($("f_max").value)||100000),
+    name:{en:name_en, fr:$("f_name_fr").value.trim()||name_en, ar:$("f_name_ar").value.trim()||name_en},
+    desc:{en:$("f_desc_en").value.trim()||"Premium social media growth service.", fr:$("f_desc_fr").value.trim()||$("f_desc_en").value.trim(), ar:$("f_desc_ar").value.trim()||$("f_desc_en").value.trim()}
+  };
+  const id=$("f_id").value;
+  if(id){ const ex=DB.services.find(s=>s.id===id); Object.assign(ex,data); }
+  else DB.services.push({id:"s"+Date.now(), ...data});
+  save(); resetSvcForm(); renderPlatformChips(); renderServices(); renderAdminAll(); fillHeroSelect(); heroCalc(); renderCart(); toast(t("saved"));
+}
+function deleteService(id){ if(!confirm("Delete this service?")) return; DB.services=DB.services.filter(s=>s.id!==id); DB.cart=DB.cart.filter(c=>c.id!==id); save(); renderPlatformChips(); renderServices(); renderAdminAll(); fillHeroSelect(); heroCalc(); renderCart(); toast(t("deleted"),false); }
+function saveBranding(){
+  DB.branding={ name:$("b_name").value.trim()||"Srvc Foullowrs", whatsapp:$("b_whatsapp").value.trim()||"212681560808",
+    tag_en:$("b_tag_en").value.trim(), tag_fr:$("b_tag_fr").value.trim(), tag_ar:$("b_tag_ar").value.trim(),
+    announce:$("b_announce").value.trim(), currency:$("b_currency").value.trim()||"MAD", hero_en:$("b_hero").value.trim() };
+  save(); applyBranding(); renderServices(); renderCart(); toast(t("saved"));
+}
+function saveCoupon(){
+  const code=$("c_code").value.trim().toUpperCase(), percent=Number($("c_percent").value), min=Number($("c_min").value)||0;
+  if(!code || isNaN(percent) || percent<1 || percent>90){ toast(t("fillFields"),false); return; }
+  if(DB.coupons.some(c=>c.code===code)){ toast("Code already exists",false); return; }
+  DB.coupons.push({code,percent,min,active:true}); save(); $("c_code").value=""; $("c_percent").value=""; $("c_min").value="";
+  renderCouponsPublic(); renderAdminAll(); toast(t("saved"));
+}
+function toggleCoupon(code){ const c=DB.coupons.find(x=>x.code===code); if(c) c.active=!c.active; save(); renderCouponsPublic(); renderAdminAll(); }
+function deleteCoupon(code){ DB.coupons=DB.coupons.filter(c=>c.code!==code); if(DB.appliedCoupon===code) DB.appliedCoupon=null; save(); renderCouponsPublic(); renderAdminAll(); renderCart(); toast(t("deleted"),false); }
+function exportJSON(){ download("srvc-foullowrs-data.json", JSON.stringify(DB,null,2), "application/json"); }
+function importJSON(ev){
+  const f=ev.target.files[0]; if(!f) return;
+  const r=new FileReader();
+  r.onload=()=>{ try{ const d=JSON.parse(r.result); if(d.services && d.branding){ DB=d; save(); location.reload(); } else toast("Invalid file",false);}catch(e){ toast("Invalid file",false);} };
+  r.readAsText(f);
+}
+function downloadProject(){ download("index.html","<!DOCTYPE html>\n"+document.documentElement.outerHTML,"text/html"); }
+function resetAll(){ if(!confirm("Reset everything to defaults?")) return; localStorage.removeItem(STORE_KEY); DB=defaultState(); save(); location.reload(); }
+function readmeText(){
+return `Srvc Foullowrs — README (Strict Zero-Cost Architecture)
+============================================================
+Business: Srvc Foullowrs — خدماتك الرقمية لنمو حساباتك
+WhatsApp: +212 681-560808 | Stack: Single index.html (HTML + Tailwind CDN + Vanilla JS)
+
+ZERO-COST BREAKDOWN
+- Hosting: Cloudflare Pages ............... $0/month (unlimited bandwidth, free SSL)
+- Database: Browser localStorage .......... $0/month (no paid DB service)
+- Orders: WhatsApp wa.me deep links ....... $0/month (no API key, no Twilio)
+- Plugins / APIs: none .................... $0/month
+- Domain DNS: Cloudflare free tier ........ $0/month
+TOTAL: $0.00 / month — no subscriptions, no credit card required.
+
+FREE DEPLOYMENT (Cloudflare Pages) — 5 minutes
+Option A: Direct Upload
+  1. Save this project as index.html
+  2. dash.cloudflare.com > Workers & Pages > Create > Pages > Upload assets
+  3. Drag & drop index.html > Deploy > get free https://*.pages.dev URL
+  4. Optional: attach your own domain via Cloudflare DNS (free)
+Option B: GitHub (auto-redeploy on every push)
+  1. Create a free GitHub repo, upload index.html
+  2. Cloudflare Pages > Connect to Git > select repo > Deploy
+
+HOW TO EDIT (no paid tools)
+- Fast: Admin panel on the site (password: admin123 — change ADMIN_PASSWORD in code!)
+  Edit services/prices, coupons, branding, WhatsApp number. Data saves in localStorage.
+  Use Admin > Backup & Export to download JSON backup or the full project (.html).
+- Code: open index.html in VS Code/Notepad. Search "defaultState()" for prices,
+  "TRANSLATIONS" for text, "212681560808" for the WhatsApp number.
+
+FEATURES
+- Arabic (RTL) / French (LTR) / English (LTR) — switcher in header
+- Service catalog with platform filters + live search + sorting
+- Automatic price calculator (per-1000 pricing, quantity presets)
+- Discount coupons with minimum-subtotal rules
+- One-click WhatsApp order message generation
+- Admin panel: services, prices, branding, coupons, export/import
+- Fully responsive, dark premium UI, no external paid services`;
+}
+function downloadReadme(){ download("README.txt", readmeText()); }
+
+/* ---------- COUNTERS & REVEAL ---------- */
+function animateCounters(){
+  document.querySelectorAll(".counter").forEach(el=>{
+    const target=Number(el.dataset.target||0); let cur=0; const step=Math.max(1,Math.ceil(target/60));
+    const iv=setInterval(()=>{ cur+=step; if(cur>=target){ cur=target; clearInterval(iv);} el.textContent=fmtInt(cur); },22);
+  });
+}
+const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting) e.target.classList.add("in"); }),{threshold:.08});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+
+/* ---------- BOOT ---------- */
+$("menuBtn").onclick=()=>$("mobileMenu").classList.toggle("hidden");
+document.querySelectorAll("#mobileMenu a").forEach(a=>a.onclick=()=>$("mobileMenu").classList.add("hidden"));
+renderMarquee();
+setLang(lang);
+animateCounters();
+</script>
+</body>
+</html>
